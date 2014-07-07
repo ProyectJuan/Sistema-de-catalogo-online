@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -123,23 +124,23 @@
 					<div class="login-form"><!--formulario agregar producto-->
 						<h2>Agregar Camara</h2>
 						<form action="frmregistro.php" method="POST" role="form" >
-							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara" required="required" class="form-control"  />
-							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" required="required"/>
-							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara"required="required" />
-							<input type="text" name="valor" placeholder="Ingrese Precio"required="required" />
+							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara"  class="form-control"  />
+							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" />
+							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara" />
+							<input type="text" name="valor" placeholder="Ingrese Precio" />
 							<input type="text" name="valor1" placeholder="Precio opcion 2" />
 							<input type="text" name="valor2" placeholder="Precio opcion 3" />
 							<input type="text" name="valor3" placeholder="Precio opcion 4" />
 							<input type="text" name="valor4" placeholder="Precio opcion 5" />
-							<input type="text" name="caracteristicas" placeholder="Ingrese Caracterisitcas de la Camara" required="required"/>
-							<input type="text" name="tienda" placeholder="Ingrese nombre de tienda"required="required" />
-							<input type="text" name="tienda1" placeholder="Tienda opcion 2"required="required" />
+							<input type="text" name="caracteristicas" placeholder="Ingrese Caracterisitcas de la Camara" />
+							<input type="text" name="tienda" placeholder="Ingrese nombre de tienda" />
+							<input type="text" name="tienda1" placeholder="Tienda opcion 2"/>
 							<input type="text" name="tienda2" placeholder="Tienda opcion 3" />
 							<input type="text" name="tienda3" placeholder="Tienda opcion 4" />
 							<input type="text" name="tienda4" placeholder="Tienda opcion 5" />
 							
 						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
-							<button type="submit" class="btn btn-default">Agregar Producto</button>
+							<button type="submit" value="registar" class="btn btn-default">Agregar Producto</button>
 						</form>
 					</div><!--/formulario agregar producto-->
 				</div>

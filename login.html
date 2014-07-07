@@ -143,9 +143,9 @@
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--login form-->
 						<h2>Iniciar Sesión</h2>
-						<form action="#">
-							<input type="text" placeholder="Nombre de usuario" />
-							<input type="email" placeholder="Contraseña" />
+						<form  name="login" action="validacionuser.php" method="post">
+							<input type="text" name="usuario" placeholder="Nombre de usuario" />
+							<input type="password" name="password" placeholder="Contraseña" />
 							<span>
 								<input type="checkbox" class="checkbox"> 
 								Recordar mis datos

@@ -2,7 +2,7 @@
 
  
 ///Conectamos a la DB
- //session_start();
+ session_start();
 $conexion = mysql_connect("localhost","root","");
 mysql_select_db("Catalogo", $conexion);
 
@@ -14,3 +14,4 @@ echo "Ocurrio un error al realizar al conexion
 contacte con el administrador.\n";
 exit; }
 ?>
+

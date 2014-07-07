@@ -1,7 +1,7 @@
 <?php
 
 
-$tipo_camara = $_POST['tipo_camara'];
+/*$tipo_camara = $_POST['tipo_camara'];
 $marca = $_POST['marca'];
 $modelo = $_POST['modelo'];
 $valor = $_POST['valor'];
@@ -17,12 +17,43 @@ $tienda4 = $_POST['tienda4'];
 $caracteristicas = $_POST['caracteristicas'];
 
 
-include_once("conexion.php");
+require("conexion.php");
+$con=coneccionbd();
+
+$dbQuery=("INSERT INTO productos VALUES('','$tipo_camara','$marca','$modelo','$valor','$valor1','$valor2','$valor3','$valor4','$tienda','$tienda1','$tienda2','$tienda3','$tienda4','$caracteristicas')");
+         
+mysql_query($dbQuery,$con); 
+mysql_close($con);
+
+if ($dbQuery = true){ 
+
+echo"<script type=\"text/javascript\">
+alert('Producto Agregado Correctamente');
+ window.location='agregar.php';
+ </script>";
+}else{
+
+"<script type=\"text/javascript\">
+alert('Error');
+ window.location='agregar.php';
+ </script>";
+
+}*/
 
 
-$dbQuery=mysql_query("INSERT INTO productos (tipo_camara, marca, modelo, valor, valor1, valor2, valor3, valor4, tienda, tienda1, tienda2, tienda3, tienda4, caracteristicas, imagen, imagen1, imagen2, imagen3, imagen4, ) VALUES ('".$tipo_camara."','".$marca."','".$modelo."','".$valor."','".$valor1."','".$valor2."','".$valor3."','".$valor4."','".$tienda."','".$tienda1."','".$tienda2."','".$tienda3."','".$tienda4."','".$caracteristicas."');");
 
-if ($dbQuery = true)){ 
+$tipo_camara = $_POST['tipo_camara'];
+
+
+require("conexion.php");
+$con=coneccionbd();
+
+$dbQuery=("INSERT INTO productos VALUES('','$tipo_camara')");
+         
+mysql_query($dbQuery,$con); 
+mysql_close($con);
+
+if ($dbQuery = true){ 
 
 echo"<script type=\"text/javascript\">
 alert('Producto Agregado Correctamente');
@@ -36,8 +67,8 @@ alert('Error');
  </script>";
 
 }
-mysql_close($conexion);
-		
+
+
 
 
 
