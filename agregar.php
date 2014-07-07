@@ -42,9 +42,7 @@
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
 								<li><a href=""><i class="fa fa-twitter"></i></a></li>
-								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					
 							</ul>
 						</div>
 					</div>
@@ -124,7 +122,7 @@
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--formulario agregar producto-->
 						<h2>Agregar Camara</h2>
-						<form action="frmregistro.php" method="POST" >
+						<form action="frmregistro.php" method="POST" role="form" >
 							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara" required="required" class="form-control"  />
 							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" required="required"/>
 							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara"required="required" />
@@ -140,7 +138,7 @@
 							<input type="text" name="tienda3" placeholder="Tienda opcion 4" />
 							<input type="text" name="tienda4" placeholder="Tienda opcion 5" />
 							
-						<button type="submit" class="btn btn-default">Agregar imagen</button>
+						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
 							<button type="submit" class="btn btn-default">Agregar Producto</button>
 						</form>
 					</div><!--/formulario agregar producto-->
