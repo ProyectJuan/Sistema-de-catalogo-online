@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Inicio | La Mejor Opcion</title>
+    <title>Detalle Producto| La mejor opcion!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -32,8 +32,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +56 9 5000000</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> lamejoropcion@gmail.com</a></li>
+								<li><a href=""><i class="fa fa-phone"></i> +56 9 500000</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i>lamopcion@gmail.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,12 +42,13 @@
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
 								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
+								
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!--/header_top-->
 		
 		<div class="header-middle"><!--header-middle-->
 			<div class="container">
@@ -56,12 +57,31 @@
 						<div class="logo pull-left">
 							<a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
 						</div>
-						
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+							
+							</div>
+							
+							<!--<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">Pound</a></li>
+								</ul>
+							</div>-->
+						</div>
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-							<li><a href="login.html"><i class="fa fa-lock"></i>Iniciar Sesión</a></li>
+							<!--	<li><a href=""><i class="fa fa-user"></i> Account</a></li>
+								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>-->
+								<li><a href="login.html"><i class="fa fa-lock"></i>Iniciar Sesion</a></li>
 							</ul>
 						</div>
 					</div>
@@ -83,13 +103,17 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Inicio</a></li>
+								<li><a href="index.html">Inicio</a></li>
 								<li class="dropdown"><a href="#">Productos<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Camaras</a></li>
-									</ul>
+										<li><a href="product-details.html" class="active"></a></li> 
+							                        
+                                    </ul>
                                 </li> 
-					      		<li><a href="contact-us.html">Contacto</a></li>
+							
+                                </li> 
+								<li><a href="contact-us.html">Contacto</a></li>
 							</ul>
 						</div>
 					</div>
@@ -103,70 +127,6 @@
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	
-	<section id="slider"><!--slider-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-							<li data-target="#slider-carousel" data-slide-to="2"></li>
-						</ol>
-						
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>N</span>ikon</h1>
-									<h2>Poder que sorprende. Características que inspiran.</h2>
-									<p><img src="images/home/d7000.png" class="girl img-responsive" alt="" /></p>
-									<a href="D7000.html" class="btn btn-default get"></i>Ver</a>		
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/nikond7000.png" class="girl img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>T</span>he best Camera</h1>
-									<h2>Nueva reflex Nikon D4s</h2>
-									<p>La velocidad para el exito. Apropiate de ese momento decisivo </p>
-									<a href="Camara9.html" class="btn btn-default get"></i>Ver</a>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/nikond4s.jpg" class="girl img-responsive" alt="" />
-								<!--	<img src="images/home/pricing.png"  class="pricing" alt="" /> -->
-								</div>
-							</div>
-							
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>N</span>ikon</h1>
-									<h2><img src="images/home/d3300.png" class="girl img-responsive" alt="" /></h2>
-									<p>Gran energía en tamaño pequeño. Captura y comparte tu mundo.</p>
-									<a href="Camara9.html" class="btn btn-default get"></i>Ver</a>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/nikond3300.png" class="girl img-responsive" alt="" />
-								<!--	<img src="images/home/pricing.png" class="pricing" alt="" /> -->
-								</div>
-							</div>
-							
-						</div>
-						
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section><!--/slider-->
-	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -179,7 +139,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
 											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Camaras Compactas 
+											Camaras compactas 
 										</a>
 									</h4>
 								</div>
@@ -200,7 +160,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
 											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Camaras Deportivas
+											Camaras deportivas
 										</a>
 									</h4>
 								</div>
@@ -250,8 +210,8 @@
 								<div id="cp" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="sonyfdr.html">pro1</a></li>
-											<li><a href="canon _eos70">pro2</a></li>
+											<li><a href="">pro1</a></li>
+											<li><a href="">pro2</a></li>
 											<li><a href="">pro3</a></li>
 											<li><a href="">pro4</a></li>
 											<li><a href="">pro5</a></li>
@@ -296,142 +256,125 @@
 							</div>
 						</div><!--/brands_products-->
 						
-						<div class="price-range"><!--price-range-->
-							<h2>Rango de Precio</h2>
-							<div class="well text-center">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
-							</div>
-						</div><!--/price-range-->
+						<div class="shipping text-center"><!--shipping-->
+							<img src="images/home/shipping.jpg" alt="" />
+						</div><!--/shipping-->
 						
 					</div>
 				</div>
 				
 				<div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Lo Más visto</h2>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/home/canoneos.jpg" alt="" />
-											<h2>$242.991</h2>
-											<p>CANON REFLEX EOS T3</p>
-											
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												
-												
-												<a href="canonreflexeos.html" class="btn btn-default add-to-cart"></i>Ver</a>
-											</div>
-										</div>
-								</div>
+					<div class="product-details"><!--product-details-->
+						<div class="col-sm-5">
+							<div class="view-product">
+								<img src="images/product-details/Sonyslta1.jpg" width='200' height='200'alt="" />
+								<h3>ZOOM</h3>
 							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/sonyslt.jpg" alt="" />
-										<h2>$329.990</h2>
-										<p>SONY SLT-A58Y</p>
+							<div id="similar-product" class="carousel slide" data-ride="carousel">
+								
+								  <!-- Wrapper for slides -->
+								    <div class="carousel-inner">
+										<div class="item active">
+										  <a href=""><img src="images/product-details/Sonyslta11.jpg" width='90' height='90' alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta12.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta13.jpg" width='90' height='90'alt=""></a>
+										</div>
+										<div class="item">
+										  <a href=""><img src="images/product-details/Sonyslta11.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta12.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta13.jpg" width='90' height='90'alt=""></a>
+										</div>
+										<div class="item">
+										  <a href=""><img src="images/product-details/Sonyslta11.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta12.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/Sonyslta13.jpg" width='90' height='90'alt=""></a>
+										</div>
 										
 									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											
-											<a href="sonyslt.html" class="btn btn-default add-to-cart"></i>Ver</a>
-										</div>
-									</div>
-								</div>
-						
+
+								  <!-- Controls -->
+								  <a class="left item-control" href="#similar-product" data-slide="prev">
+									<i class="fa fa-angle-left"></i>
+								  </a>
+								  <a class="right item-control" href="#similar-product" data-slide="next">
+									<i class="fa fa-angle-right"></i>
+								  </a>
 							</div>
+
 						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/gopro.jpg" alt="" />
-										<h2>$239.990</h2>
-										<p>GOPRO HERO3</p>
-										
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											
-											<a href="gopro3.html" class="btn btn-default add-to-cart"></i>Ver</a>
-										</div>
-									</div>
-								</div>
+						<div class="col-sm-7">
+							<div class="product-information"><!--/product-information-->
+								
+								<h2>SONY SLT-A58Y</h2>
+								<p>Web ID: 00002</p>
+								<img src="images/product-details/rating.png" alt="" />
+								<span>
+									<span><a href="http://www.ripley.cl/ripley-chile/tecnologia/camaras/reflex/camara-reflex-sony-slt-a58y-2000342337244p">$329.990 Ripley</a> </span>
+									<p><a href="http://www.falabella.com/falabella-cl/product/3736894/Camara-SLT-A58Y-+-Lentes-18-55-y-55-200;jsessionid=2353055CC3CAF651E5B1717E1D8B8B5C.node14?skuId=3736894&_requestid=21547">$349.990 Falabella</a></p>	
+								</span>
+								<p><b>Marca:</b>Sony</p>
+								<p><a href="http://www.sony.cl/electronics/camaras-lentes-intercambiables/slt-a58">Link a pagina del fabricante</a></p>
+								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+							</div><!--/product-information-->
+						</div>
+					</div><!--/product-details-->
+					
+					<div class="category-tab shop-details-tab"><!--category-tab-->
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#details" data-toggle="tab">Descripción</a></li>
+								<li><a href="#companyprofile" data-toggle="tab">Detalles</a></li>
+								<li><a href="#reviews" data-toggle="tab">Comentarios</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							
+							
+							<div class="tab-pane fade" id="companyprofile" >
+								
+								<p align="justify">
+								COMPATIBILIDAD CON LENTE:Lentes con montura A de Sony, funcionamiento con lentes Minolta/Konica Minolta </br>
+                                TIPO DE SENSOR: Sensor CMOS Exmor® APS HD tipo APS-C (23,2 x 15,4 mm)</br>
+                                PÍXELES EFECTIVOS: Aprox. 20,1</br>
+                                SENSIBILIDAD ISO: Equivalente a ISO 100-16.000</br>
+                                TIPO DE VISOR: Electrónico, Xtra Fine</br>
+                                TIPO DE PANTALLA: TFT</br></p>
+				, 			
 							
 							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/nikoncool.jpg" alt="" />
-										<h2> $79.990</h2>
-										<p>NIKON COOLPIX S3500 RED</p>
-										
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											
-											<a href="nikon_coolpix.html" class="btn btn-default add-to-cart"></i>Ver</a>
-										</div>
-									</div>
-									<img src="images/home/new.png" class="new" alt="" />
-								</div>
-								
+							
+							<div class="tab-pane fade active in" id="details" >
+								<p align="justify">Detalles rápidos, creatividad sencillano te pierdas el momentoe elimina las conjeturas a la hora de fotografiar con el sensor CMOS Exmor™ APS HD de 20,1 MP y el visor OLED. El enfoque automático de fijación permite captar los sujetos aunque se muevan a gran velocidad.Imágenes brillantes en todas las condiciones, el sensor CMOS Exmor™ APS HD de 20,1 MP ofrece un amplio rango de sensibilidad ISO (100–16.000) para que puedas obtener imágenes vívidas en todas las condiciones, incluso con luz escasa.</p>
 							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/samsungwb1100.jpg" alt="" />
-										<h2> $129.990</h2>
-										<p>SAMSUNG WB1100</p>
-										
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											
-											<a href="samsungwb1100.html" class="btn btn-default add-to-cart"></i>Ver</a>
-										</div>
-									</div>
-									<img src="images/home/sale.png" class="new" alt="" />
+							
+							<div class="tab-pane fade" id="reviews" >
+								<div class="col-sm-12">
+									<ul>
+										<li><a href=""><i class="fa fa-user"></i>Carlos V.</a></li>
+										<li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
+										<li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
+									</ul>
+									<p>Personalmente encuentro sus 12.3 megapíxeles más que suficientes. La cámara viene con un objetivo de 18-105mm f/3.5-5.6 ED AF-S con estabilizador VR, pantalla LCD de 3 pulgadas (de alta resolución), función Live View (para ver en directo lo que estás capturando a través de la propia pantalla LCD), detección facial, grabación de vídeo, entre otras características.</p>
+									<p><b>Escribe tu opinión</b></p>
+									
+									<form action="#">
+										<span>
+											<input type="text" placeholder="Your Name"/>
+											<input type="email" placeholder="Email Address"/>
+										</span>
+										<textarea name="" ></textarea>
+										<b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
+										<button type="button" class="btn btn-default pull-right">
+											Submit
+										</button>
+									</form>
 								</div>
-								
 							</div>
+							
 						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/sonypro1.jpg" alt="" />
-										<h2>  $1.399.990</h2>
-											<p>SONY FDR-AX100</p>
-										
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											
-											<a href="Camara9.html" class="btn btn-default add-to-cart"></i>Ver</a>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						
-					</div><!--features_items-->
-					
-				
 					</div><!--/category-tab-->
-				</div>
+					
+				</div><!--acaarriba del div va recomended item-->
 			</div>
 		</div>
 	</section>
@@ -442,7 +385,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>L</span>a Mejor Opcion</h2>
+							<h2><span>L</span>a mejor opción</h2>
 							<p>Tu mano amiga en las compras por internet</p>
 						</div>
 					</div>
@@ -457,7 +400,7 @@
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
+								<p>Camara 1</p>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
@@ -472,7 +415,7 @@
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
+								<p>Camara 2</p>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
@@ -487,7 +430,7 @@
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
+								<p>Camara 3</p>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
@@ -502,30 +445,24 @@
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
+								<p>Camara 4</p>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="images/home/mapa.jpg" alt=""<p>Region de la Araucania, Temuco, Chile</p>
+							<img src="images/home/mapa.jpg" alt="" p>Temuco, Region de la araucania, Chile</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
+		<div class="footer-bottom"><!--arriba va el footer-->
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2014 La mejor opción Inc. Todos los derechos reservados.</p>
-					<p class="pull-right">Diseño realizado por <span><a target="_blank" href="">ProyectJuan</a></span></p>
+					<p class="pull-right">Diseño realizado por <span><a target="_blank" href="">ProjectJuan</a></span></p>
 				</div>
 			</div>
 		</div>
@@ -535,9 +472,9 @@
 
   
     <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 </body>
