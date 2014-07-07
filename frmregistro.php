@@ -17,7 +17,7 @@ $caracteristicas = $_POST['caracteristicas'];
 
 
 require("conexion.php");
-$con=coneccionbd();
+$con=conexion();
 
 $dbQuery=("INSERT INTO productos VALUES('','$tipo_camara','$marca','$modelo','$valor','$valor1','$valor2','$valor3','$valor4','$tienda','$tienda1','$tienda2','$tienda3','$tienda4','$caracteristicas')");
          
