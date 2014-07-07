@@ -1,7 +1,6 @@
 <?php
 
-
-/*$tipo_camara = $_POST['tipo_camara'];
+$tipo_camara = $_POST['tipo_camara'];
 $marca = $_POST['marca'];
 $modelo = $_POST['modelo'];
 $valor = $_POST['valor'];
@@ -38,35 +37,9 @@ alert('Error');
  window.location='agregar.php';
  </script>";
 
-}*/
-
-
-
-$tipo_camara = $_POST['tipo_camara'];
-
-
-require("conexion.php");
-$con=coneccionbd();
-
-$dbQuery=("INSERT INTO productos VALUES('','$tipo_camara')");
-         
-mysql_query($dbQuery,$con); 
-mysql_close($con);
-
-if ($dbQuery = true){ 
-
-echo"<script type=\"text/javascript\">
-alert('Producto Agregado Correctamente');
- window.location='agregar.php';
- </script>";
-}else{
-
-"<script type=\"text/javascript\">
-alert('Error');
- window.location='agregar.php';
- </script>";
-
 }
+
+
 
 
 

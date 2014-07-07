@@ -1,17 +1,18 @@
 <?Php
 
  
-///Conectamos a la DB
- session_start();
-$conexion = mysql_connect("localhost","root","");
-mysql_select_db("Catalogo", $conexion);
+error_reporting(0);
 
-if (!$conexion)
-   {
-///Error por si pasa algo...
- 
-echo "Ocurrio un error al realizar al conexion
-contacte con el administrador.\n";
-exit; }
+function coneccionbd(){
+
+$con = mysql_connect("localhost","root","");
+
+if (!$con){
+die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("catalogo", $con);
+return($con);
+}
+
 ?>
-
