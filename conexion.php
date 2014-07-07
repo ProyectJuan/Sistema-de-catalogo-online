@@ -2,7 +2,7 @@
 
  
 ///Conectamos a la DB
- session_start();
+ //session_start();
 $conexion = mysql_connect("localhost","root","");
 mysql_select_db("Catalogo", $conexion);
 

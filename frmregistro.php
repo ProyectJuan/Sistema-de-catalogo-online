@@ -4,9 +4,6 @@ include_once("conexion.php");
 
 
 
-
-
-
 $tipo_camara = $_POST['tipo_camara'];
 $marca = $_POST['marca'];
 $modelo = $_POST['modelo'];
@@ -30,12 +27,10 @@ $caracteristicas = $_POST['caracteristicas'];
 
 $dbQuery=mysql_query("INSERT INTO productos (tipo_camara, marca, modelo, valor, valor1, valor2, valor3, valor4, tienda, tienda1, tienda2, tienda3, tienda4, caracteristicas, imagen, imagen1, imagen2, imagen3, imagen4, ) VALUES ('".$tipo_camara."','".$marca."','".$modelo."','".$valor."','".$valor1."','".$valor2."','".$valor3."','".$valor4."','".$tienda."','".$tienda1."','".$tienda2."','".$tienda3."','".$tienda4."','".$caracteristicas."');");
 
-echo"<script type=\"text/javascript\">alert('Producto Agregado Correctamente'); window.location='agregar.html';</script>";
+echo"<script type=\"text/javascript\">alert('Producto Agregado Correctamente'); window.location='agregar.php';</script>";
 
 
-
-
-
+mysql_close($conexion);
 
 
 
