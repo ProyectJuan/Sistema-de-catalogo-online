@@ -23,6 +23,7 @@ $dbQuery=("INSERT INTO productos VALUES('','$tipo_camara','$marca','$modelo','$v
          
 mysql_query($dbQuery,$con); 
 mysql_close($con);
+echo $dbQuery;
 
 if ($dbQuery = true){ 
 
