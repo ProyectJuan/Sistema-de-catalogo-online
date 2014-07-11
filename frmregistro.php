@@ -16,12 +16,13 @@ $tienda2 = $_POST['tienda2'];
 $tienda3 = $_POST['tienda3'];
 $tienda4 = $_POST['tienda4'];
 $tienda5 = $_POST['tienda5'];
+$imagen = $_POST['imagen'];
 
 
 
 
 
-$dbQuery=mysql_query("INSERT INTO camaras VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5')");
+$dbQuery=mysql_query("INSERT INTO camaras VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5','$imagen')");
          
 
 if ($dbQuery = true){ 
