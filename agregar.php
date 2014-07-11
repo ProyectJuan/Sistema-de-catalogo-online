@@ -123,7 +123,7 @@
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--formulario agregar producto-->
 						<h2>Agregar Camara</h2>
-						<form action="frmregistro.php" method="POST" role="form"  enctype="multipart/form-data">
+						<form action="frmregistro.php" method="POST"  enctype="multipart/form-data">
 							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara"  class="form-control"  />
 							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" required="required"/>
 							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara" required="required"/>
