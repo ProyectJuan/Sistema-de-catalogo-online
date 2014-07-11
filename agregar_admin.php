@@ -122,25 +122,18 @@
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--formulario agregar producto-->
-						<h2>Agregar Camara</h2>
-						<form action="frmregistro.php" method="POST" role="form" >
-							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara"  class="form-control"  />
-							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" />
-							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara" />
-							<input type="text" name="precio1" placeholder="Ingrese Precio" />
-							<input type="text" name="precio2" placeholder="Precio opcion 2" />
-							<input type="text" name="precio3" placeholder="Precio opcion 3" />
-							<input type="text" name="precio4" placeholder="Precio opcion 4" />
-							<input type="text" name="precio5" placeholder="Precio opcion 5" />
-							<input type="text" name="caracteristicas" placeholder="Ingrese Caracterisitcas de la Camara" />
-							<input type="text" name="tienda1" placeholder="Ingrese nombre de tienda" />
-							<input type="text" name="tienda2" placeholder="Tienda opcion 2"/>
-							<input type="text" name="tienda3" placeholder="Tienda opcion 3" />
-							<input type="text" name="tienda4" placeholder="Tienda opcion 4" />
-							<input type="text" name="tienda5" placeholder="Tienda opcion 5" />
-							<input type="file" class=""  name="archivo[]" value=""/>
+						<h2>Agregar Administrador</h2>
+						<form action="ingreso_admin.php" method="POST" role="form" >
+							<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control"  />
+							<input type="text" name="nombre_com" placeholder="Nombre Completo" />
+							<input type="password" name="password" placeholder="Ingrese Contraseña" />
+							<input type="password" name="password1" placeholder="Ingrese nuevamente la contraseña" />
+							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
+							<input type="text" name="email" placeholder="Correo Electronico" />
+							
+							
 						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
-							<button type="submit" value="registar" class="btn btn-default">Agregar Producto</button>
+							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
 						</form>
 					</div><!--/formulario agregar producto-->
 				</div>

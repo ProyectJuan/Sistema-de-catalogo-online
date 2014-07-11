@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Agregar | Productos</title>
+    <title>Inicio de Sesion | Administrador</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -23,6 +22,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <?php include_once('conexion.php');?>
 </head><!--/head-->
 
 <body>
@@ -34,7 +34,7 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href=""><i class="fa fa-phone"></i>+56 9 5000000</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.cl</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> lamopcion@gmail.cl</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,9 +42,8 @@
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href=""><i class="fa fa-twitter"></i></a></li>
-					
-							</ul>
+								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
+								</ul>
 						</div>
 					</div>
 				</div>
@@ -58,7 +57,29 @@
 						<div class="logo pull-left">
 							<a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
 						</div>
-				
+						<!-- <div class="btn-group pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									USA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">Pound</a></li>
+								</ul>
+							</div>
+						<!-- </div> -->
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
@@ -121,28 +142,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form"><!--formulario agregar producto-->
-						<h2>Agregar Camara</h2>
-						<form action="frmregistro.php" method="POST" role="form" >
-							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara"  class="form-control"  />
-							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" />
-							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara" />
-							<input type="text" name="precio1" placeholder="Ingrese Precio" />
-							<input type="text" name="precio2" placeholder="Precio opcion 2" />
-							<input type="text" name="precio3" placeholder="Precio opcion 3" />
-							<input type="text" name="precio4" placeholder="Precio opcion 4" />
-							<input type="text" name="precio5" placeholder="Precio opcion 5" />
-							<input type="text" name="caracteristicas" placeholder="Ingrese Caracterisitcas de la Camara" />
-							<input type="text" name="tienda1" placeholder="Ingrese nombre de tienda" />
-							<input type="text" name="tienda2" placeholder="Tienda opcion 2"/>
-							<input type="text" name="tienda3" placeholder="Tienda opcion 3" />
-							<input type="text" name="tienda4" placeholder="Tienda opcion 4" />
-							<input type="text" name="tienda5" placeholder="Tienda opcion 5" />
-							<input type="file" class=""  name="archivo[]" value=""/>
-						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
-							<button type="submit" value="registar" class="btn btn-default">Agregar Producto</button>
+					<div class="login-form"><!--login form-->
+						<h2>Iniciar Sesión</h2>
+						<form  name="login" action="validacionuser.php" method="post">
+							<input type="text" name="usuario" placeholder="Nombre de usuario" />
+							<input type="password" name="password" placeholder="Contraseña" />
+							<span>
+								<input type="checkbox" class="checkbox"> 
+								Recordar mis datos
+							</span>
+							<button type="submit" class="btn btn-default">Iniciar Sesión</button>
 						</form>
-					</div><!--/formulario agregar producto-->
+					</div><!--/login form-->
 				</div>
 				<!--<div class="col-sm-1">
 					<h2 class="or">OR</h2>
@@ -163,14 +174,14 @@
 	</section><!--/form-->
 	
 	
-	<footer id="footer"><!--Footer-->
+<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>L</span>a Mejor Opcion</h2>
-							<p>Busca tus camaras preferidas, en todas las tiendas donde se encuentran disponibles.</p>
+							<h2><span>L</span>a mejor opción</h2>
+							<p>Tu mano amiga en las compras por internet</p>
 						</div>
 					</div>
 					<div class="col-sm-7">
@@ -178,14 +189,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=z-uIat-axFo" target="_blank"><img src="images/product-details/nikond7000.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Canon EOS 700D (Rebel t5i)</p>
 							</div>
 						</div>
 						
@@ -193,14 +203,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=WSYJ8c5Upmo" target="_blank"><img src="images/product-details/nikoncool1.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Nikon Coolpix s6500</p>
 							</div>
 						</div>
 						
@@ -208,14 +217,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=W4kBz5OATjM" target="_blank"><img src="images/product-details/gopro13.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Gopro 3 Silver</p>
 							</div>
 						</div>
 						
@@ -223,42 +231,34 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=eeV3RIoBroU" target="_blank"><img src="images/product-details/sony1.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Sony Action cam HDR-AS30V</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="images/home/mapa.jpg" alt=""<p>Region de la Araucania, Temuco, Chile</p>
+							<img src="images/home/mapa.jpg" alt="" p>Temuco, Region de la araucania, Chile</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
+		<div class="footer-bottom"><!--arriba va el footer-->
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2014 ProyectJuan.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="">ProyectJuan</a></span></p>
+					<p class="pull-left">Copyright © 2014 La mejor opción Inc. Todos los derechos reservados.</p>
+					<p class="pull-right">Diseñado por  <span><a target="_blank" href="https://github.com/ProyectJuan">Proyectjuan</a></span></p>
 				</div>
 			</div>
 		</div>
 		
 	</footer><!--/Footer-->
-	
 
   
     <script src="js/jquery.js"></script>

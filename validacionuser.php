@@ -2,9 +2,9 @@
 include_once("conexion.php");
 
 
-$conexion = mysql_connect( "localhost", "root","");
+$conexion = mysql_connect( "localhost", "root","123");
 
-mysql_select_db("Catalgo",$conexion);
+mysql_select_db("catalgo",$conexion);
 
 $user=$_POST["usuario"];
 $pass=$_POST["password"];	
