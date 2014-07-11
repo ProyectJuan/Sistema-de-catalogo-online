@@ -127,13 +127,13 @@
 							<input type="text" name="tipo_camara" placeholder="Ingrese Tipo Camara"  class="form-control"  />
 							<input type="text" name="marca" placeholder="Ingrese Marca de la Camara" />
 							<input type="text" name="modelo" placeholder="Ingrese Modelo de la Camara" />
-							<input type="text" name="precio1" placeholder="Ingrese Precio" />
+							<input type="text" name="precio1" placeholder="Ingrese Precio" required="required" />
 							<input type="text" name="precio2" placeholder="Precio opcion 2" />
 							<input type="text" name="precio3" placeholder="Precio opcion 3" />
 							<input type="text" name="precio4" placeholder="Precio opcion 4" />
 							<input type="text" name="precio5" placeholder="Precio opcion 5" />
 							<input type="text" name="caracteristicas" placeholder="Ingrese Caracterisitcas de la Camara" />
-							<input type="text" name="tienda1" placeholder="Ingrese nombre de tienda" />
+							<input type="text" name="tienda1" placeholder="Ingrese nombre de tienda" equired="required"/>
 							<input type="text" name="tienda2" placeholder="Tienda opcion 2"/>
 							<input type="text" name="tienda3" placeholder="Tienda opcion 3" />
 							<input type="text" name="tienda4" placeholder="Tienda opcion 4" />
