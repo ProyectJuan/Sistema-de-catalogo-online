@@ -17,7 +17,7 @@ include_once("conexion.php");
 	
 				$dbQuery=mysql_query("INSERT INTO usuarios (usuario, nombre_com, password, descripcion, email ) VALUES ('".$usuario."','".$nombre_com."','".$password."','".$descripcion."','".$email."');");
    	             
-				 echo"<script type=\"text/javascript\">alert('Usuario Agregado Exitosamente'); window.location='index.html';</script>";
+				 echo"<script type=\"text/javascript\">alert('Usuario Agregado Exitosamente'); window.location='';</script>";
 				 
 
 					}else{
