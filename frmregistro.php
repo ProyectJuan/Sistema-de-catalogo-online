@@ -20,6 +20,7 @@ $tienda4 = $_POST['tienda5'];
 
 
 
+
 $dbQuery=mysql_query("INSERT INTO camaras VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5')");
          
 
