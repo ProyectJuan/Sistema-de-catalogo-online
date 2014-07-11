@@ -16,7 +16,8 @@ $tienda2 = $_POST['tienda2'];
 $tienda3 = $_POST['tienda3'];
 $tienda4 = $_POST['tienda4'];
 $tienda5 = $_POST['tienda5'];
-
+$imagen = $_POST['imagen'];
+$tipo_imagen= $_POST['tipo_imagen'];
 
 if ( ! isset($_FILES["imagen"]) || $_FILES["imagen"]["error"] > 0){
     echo "ha ocurrido un error";
@@ -40,7 +41,7 @@ if ( ! isset($_FILES["imagen"]) || $_FILES["imagen"]["error"] > 0){
         $data = mysql_escape_string($data);
 
 
-$dbQuery=mysql_query("INSERT INTO camaras (imagen, tipo_imagen) VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5','$data','$tipo')");
+$dbQuery=mysql_query("INSERT INTO camaras VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5','$imagen','$tipo_imagen')");
          
 
 if ($dbQuery = true){ 
