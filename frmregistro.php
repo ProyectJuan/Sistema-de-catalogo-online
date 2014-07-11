@@ -16,7 +16,6 @@ $tienda2 = $_POST['tienda2'];
 $tienda3 = $_POST['tienda3'];
 $tienda4 = $_POST['tienda4'];
 $tienda5 = $_POST['tienda5'];
-$imagen = $_POST['data'];
 
 if ( ! isset($_FILES["imagen"]) || $_FILES["imagen"]["error"] > 0){
     echo "ha ocurrido un error";
