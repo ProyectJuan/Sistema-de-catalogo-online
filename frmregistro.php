@@ -13,9 +13,9 @@ $precio5 = $_POST['precio5'];
 $caracteristicas = $_POST['caracteristicas'];
 $tienda1 = $_POST['tienda1'];
 $tienda2 = $_POST['tienda2'];
-$tienda2 = $_POST['tienda3'];
+$tienda3 = $_POST['tienda3'];
 $tienda4 = $_POST['tienda4'];
-$tienda4 = $_POST['tienda5'];
+$tienda5 = $_POST['tienda5'];
 
 
 
