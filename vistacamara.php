@@ -238,16 +238,19 @@
 					</div>
 				</div>
 				<div class="col-sm-9 padding-right">
- <?php 
+
 
 				
-				echo "<div class="product-details">";
-				echo	"<div class="col-sm-5">";
-						echo  "<div class="view-product">";
+				<div class="product-details">
+					<div class="col-sm-5">
+						<div class="view-product">
+							 <?php 
+
 							echo "<img src=".$row["imagen"];" width='200' height='200'alt="" />";
-								echo "<h3>ZOOM</h3>";
-							echo "</div>";
-						echo "<div id="similar-product" class="carousel slide" data-ride="carousel">";
+							?>
+								<h3>ZOOM</h3>"
+							</div>
+					<div id="similar-product" class="carousel slide" data-ride="carousel">
 								
 								  <!-- Wrapper for slides -->
 								    <div class="carousel-inner">
@@ -267,7 +270,7 @@
 										  <a href=""><img src="images/product-details/samsungwb1102.jpg" width='90' height='90'alt=""></a>
 										</div>
 
-							echo	"</div>";
+						</div>
 
 								
 								  <a class="left item-control" href="#similar-product" data-slide="prev">
@@ -276,9 +279,9 @@
 								  <a class="right item-control" href="#similar-product" data-slide="next">
 									<i class="fa fa-angle-right"></i>
 								  </a>
-						echo	"</div>";
-
-						echo "</div>";
+							</div>
+					</div>
+						 <?php 
 						
 						$conexion = mysql_connect("localhost","root","");
 						mysql_select_db("catalogo", $conexion);
