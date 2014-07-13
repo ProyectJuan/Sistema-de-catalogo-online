@@ -108,59 +108,63 @@
         <h3>Administrador</h3>
         <p> Como administrador tiene los privilegios maximos dentro de este sistema, por lo que se recomienda guardar de forma inmediata cualquier tipo de modificacion realizada.</p>
         </div>
+
 	<!--<section id="form">--><!--form-->
 		<div class="container">
       <div class="row">
         <div class="col-md-4">
+        	<form> <!-- formulario menu -->
           <h3>Ver Catálogo</h3>
           <p>Acceso total a toda la informacion del catálogo, puede realizar busqueda de las cámaras.</p>
-          <p><a class="btn btn-default" href="Vista1.php" role="button">Ver &raquo;</a></p>
+
+          <button type="submit" value="catalogo" class="btn btn-default">Ver Catálogo</button>
+
         </div>
+    </form>
         <div class="col-md-4">
-          <h3>Agregar usuario</h3>
+        	<form>
+          <h3>Agregar Administradores</h3>
           <p>Para agregar un nuevo usuario al sistema, debe completar este formulario </p>
-          <p><a class="btn btn-default" href="Registro.php" role="button">Continuar &raquo;</a></p>
+
+          <button type="submit" value="registar" class="btn btn-default">Continuar</button>
        </div>
+   </form>
         <div class="col-md-4">
+        	<form>
           <h3>Editar Informacion del Catálogo</h3>
           <p>Al momento de actualizar, agregar informacion, asegure guardar todos los cambios realizados</p>
-          <p><a class="btn btn-default" href="modificar.php" role="button">Continuar &raquo;</a></p>
+               <button type="submit" value="registar" class="btn btn-default">Continuar</button>
         </div>
       </div>
+      </form>
       <div class="row">
       <div class="col-md-4">
+      	<form>
           <h3>Agregar nuevas Cámaras</h3>
-          <p>Para agregar un nuevo producto al sistema de catálogo debe completar el sigueinte formulario con la informacion requerida</p>
-          <p><a class="btn btn-default" href="Formulario.php" role="button">Continuar &raquo;</a></p>
+          <p>Debe ingresar todos los datos requeridos.</p>
+              <button type="submit" value="registar" class="btn btn-default">Agregar</button>
         </div>
+    </form>
       <div class="col-md-4">
-        
-         <div class="col-md-4">
+        	<form>
           <h3>Mensajes</h3>
-          <p></p>
-          <p><a class="btn btn-default" href="verMensaje.php" role="button">Ver &raquo;</a></p>
-        </div>
-      </div>
-      <div>
-              
+          <p>Ver mensajes de usuarios, con sugerencias y preguntas.</p>
+
+          <button type="submit" value="registar" class="btn btn-default">Ver Mensajes</button>
+       </div>
+   </form>
           <div class="col-md-4">
-          <h3>Editar Perfir de Usuarios</h3>
-          <p></p>
-          <p><a class="btn btn-default" href="modificaruser.php" role="button">Ver &raquo;</a></p>
+          	<form>
+          <h3>Editar Administradores</h3>
+          <p>Puede realizar cambios en los datos de los administradores</p>
+               <button type="submit" value="registar" class="btn btn-default">Editar</button>
         </div>
-             </div>  
-      <div>
-      </div>
       
-        
-					</div><!--/formulario agregar producto-->
-				</div>
-				
-					
+      </form>
 					</div><!--/sign up form-->
 				</div>
 			</div>
-		</div>
+		
 	
 	
 	
