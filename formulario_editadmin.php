@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Agregar Administradores</title>
+    <title>Editar Administradores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -120,26 +120,91 @@
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4">
+				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--formulario agregar administrador-->
-						<h2>Agregar Administrador</h2>
-						<form action="ingreso_admin.php" method="POST" role="form" >
-							<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control"  />
-							<input type="text" name="nombre_com" placeholder="Nombre Completo" />
-							<input type="password" name="password" placeholder="Ingrese Contraseña" />
-							<input type="password" name="password1" placeholder="Ingrese nuevamente la contraseña" />
-							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
-							<input type="text" name="email" placeholder="Correo Electronico" />
+						<h2>Modificar Datos de Administrador</h2>
+						<p> Realice los cambios que se requieran.</p>
+					<?php 
 					
-							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
-						</form>
-					</div><!--/formulario agregar administrador-->
-				</div>
+					$id=$_POST['id'];
+
+					$conexion = mysql_connect("localhost","root","123");
+					mysql_select_db("catalogo", $conexion); 
+					if (empty($_POST["id"])) {
+
+				    		echo"<script type=\"text/javascript\">alert('Ingrese una ID '); window.location='modificar_admin.php';</script>";
+					}else{
+
 				
-				</div>
-			</div>
-		</div>
-	</section><!--/form-->
+					
+					$sql=mysql_query("select * from usuarios where id = '$id'");
+
+					while($array=mysql_fetch_array($sql)){
+					
+					$usuario=$array['usuario']; 
+					 $apellido=$array['nombre_com']; 
+					 $password=$array['password'];
+					 $descripcion=$array['descripcion'];
+					 $email=$array['email'];
+					
+					 
+					 
+					 if(mysql_num_rows($sql)>0) { 
+				?>
+				
+					<table align="center">
+						 <form class="form-horizontal"  role="form" action="edit_admin.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
+ 	 				<tr>
+					 <td>Nombre de Usuario</td>
+					 <td>
+					 <input  type='name' name='usuario' value=<?php echo $usuario ?>>
+					 </td >
+					 </tr>
+					 <tr>
+	 					<td>Nombre Completo</td>
+	 					<td>
+	 					<input type='name' name='nombre_com' value=<?php echo $nombre_com ?>>
+						 </td >
+					 </tr>
+	
+	    <tr>
+	 <td>Contraseña</td>
+	 <td>
+	 <input type='password' name='password' value=<?php echo $password ?>>
+	 </td >
+	 </tr>
+	
+	    <tr>
+	 <td>Descripcion Administrador</td>
+	 <td>
+	 <input type='name' name='descripcion' value=<?php echo $descripcion ?>>
+	 </td >
+	 </tr>
+		    <tr>
+		 </tr>
+
+	    <tr>
+	 <td>Email</td>
+	 <td>
+	 	<input type='name' name='email' value=<?php echo $email ?>>
+	 </td >
+	 </tr>
+	
+	 				<?php
+				}
+				}
+			}
+		
+				
+	?>
+
+    <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+	<input id="send" type ="submit" name ="submit" value="Modificar" />
+	 </div>
+  </div>
+	</form>
+	</table>
 	
 	
 	<footer id="footer"><!--Footer-->

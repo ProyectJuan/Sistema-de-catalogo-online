@@ -141,7 +141,7 @@
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
+				<div class="col-sm-4 col-sm-offset-4">
 					<div class="login-form"><!--login form-->
 						<h2>Iniciar Sesión</h2>
 						<form  name="login" action="validacionuser.php" method="post">

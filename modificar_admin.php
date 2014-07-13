@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Agregar Administradores</title>
+    <title>Modificar Administradores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -120,19 +120,41 @@
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4">
+				
 					<div class="login-form"><!--formulario agregar administrador-->
-						<h2>Agregar Administrador</h2>
-						<form action="ingreso_admin.php" method="POST" role="form" >
-							<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control"  />
-							<input type="text" name="nombre_com" placeholder="Nombre Completo" />
-							<input type="password" name="password" placeholder="Ingrese Contraseña" />
-							<input type="password" name="password1" placeholder="Ingrese nuevamente la contraseña" />
-							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
-							<input type="text" name="email" placeholder="Correo Electronico" />
-					
-							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
-						</form>
+						<table align="center">
+						<h2>Modificar Administrador</h2>
+						<form action="formulario_editadmin.php" method="POST" enctype="multipart/form-data">
+							<tr>
+					<td>ID
+					</td>
+					<td>
+
+					   <input type="number" name="id" >
+					   	<input type="submit" name="btnenviar" id="btnenviar" value="Mostrar Perfil" >
+              <input type=button value="Eliminar Perfil" onClick= "window.location='form_borrar.php'">
+					</td>
+				</tr>		
+		
+	
+	</table>
+	
+	<?php 
+$conexion = mysql_connect("localhost","root","123");
+mysql_select_db("catalogo", $conexion);
+$result = mysql_query("SELECT * FROM usuarios");
+$result = mysql_query("SELECT id, usuario, nombre_com, password, descripcion, email FROM usuarios"); 
+if ($row = mysql_fetch_array($result)){ 
+   echo "<table border = '1'> \n"; 
+   echo "<tr><td>ID</td><td>Nombre de Usuario</td><td>Nombre Completo</td><td>Contraseña</td><td>Descripcion</td><td>Email</td></tr> \n"; 
+     do { 
+      echo "<tr><td>".$row["id"]."</td><td>".$row["usuario"]."</td><td>".$row["nombre_com"]."</td><td>".$row["password"]."</td><td>".$row["descripcion"]."</td><td>".$row["email"]."</td></tr> \n"; 
+   } while ($row = mysql_fetch_array($result)); 
+   echo "</table> \n"; 
+} else { 
+echo "¡ No se ha encontrado ningún registro !"; 
+} 
+?>
 					</div><!--/formulario agregar administrador-->
 				</div>
 				
