@@ -289,7 +289,7 @@
 						$result = mysql_query("SELECT id, tipo_camara, marca, modelo, precio1, Link, precio2, precio3, precio4, precio5, caracteristicas, tienda1, tiena2, tienda3, tienda4, tienda5, imagen FROM camaras"); 
 						if ($row = mysql_fetch_array($result)){ 
   											
-						echo "<div class="col-sm-7" >";
+						echo "<div class="col-sm-7">";
 						echo "<div class="product-information">";
 								
 							echo "<h2></h2>".$row["modelo"];
