@@ -28,7 +28,7 @@ if($password==$pass)
 	
 	$_SESSION["validado"]="ok";
 	$_SESSION['usuario'] = $_POST['usuario'];
-    header("location:index.html");
+    header("location:menu.php");
 		
 	
 	
