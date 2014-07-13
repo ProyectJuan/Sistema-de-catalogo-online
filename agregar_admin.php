@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Agregar | Productos</title>
+    <title>Agregar Administradores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
 					
 							</ul>
 						</div>
@@ -162,8 +162,8 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>L</span>a Mejor Opcion</h2>
-							<p>Busca tus camaras preferidas, en todas las tiendas donde se encuentran disponibles.</p>
+							<h2><span>L</span>a mejor opción</h2>
+							<p>Tu mano amiga en las compras por internet</p>
 						</div>
 					</div>
 					<div class="col-sm-7">
@@ -171,14 +171,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=z-uIat-axFo" target="_blank"><img src="images/product-details/nikond7000.png" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Canon EOS 700D (Rebel t5i)</p>
 							</div>
 						</div>
 						
@@ -186,14 +185,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=WSYJ8c5Upmo" target="_blank"><img src="images/product-details/nikoncool1.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Nikon Coolpix s6500</p>
 							</div>
 						</div>
 						
@@ -201,14 +199,13 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=W4kBz5OATjM" target="_blank"><img src="images/product-details/gopro13.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Gopro 3 Silver</p>
 							</div>
 						</div>
 						
@@ -216,36 +213,29 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
+										<a href="https://www.youtube.com/watch?v=eeV3RIoBroU" target="_blank"><img src="images/product-details/sony1.jpg" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
 									</div>
 								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+								<p>Sony Action cam HDR-AS30V</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="images/home/mapa.jpg" alt=""<p>Region de la Araucania, Temuco, Chile</p>
+							<img src="images/home/mapa.jpg" alt="" p>Temuco, Region de la araucania, Chile</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
+		<div class="footer-bottom"><!--arriba va el footer-->
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2014 ProyectJuan.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="">ProyectJuan</a></span></p>
+					<p class="pull-left">Copyright © 2014 La mejor opción Inc. Todos los derechos reservados.</p>
+					<p class="pull-right">Diseñado por  <span><a target="_blank" href="https://github.com/ProyectJuan">Proyectjuan</a></span></p>
 				</div>
 			</div>
 		</div>
