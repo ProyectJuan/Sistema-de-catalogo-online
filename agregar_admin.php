@@ -130,8 +130,6 @@
 							<input type="password" name="password1" placeholder="Ingrese nuevamente la contraseña" />
 							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
 							<input type="text" name="email" placeholder="Correo Electronico" />
-							
-							
 					
 							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
 						</form>
