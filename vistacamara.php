@@ -287,12 +287,12 @@
 						if ($row = mysql_fetch_array($result)){ 
   											
 						echo "<div class="col-sm-7">";
-						echo "<div class="product-information">";<!--/product-information-->
+						echo "<div class="product-information">";
 								
 							echo "<h2></h2>".$row["modelo"];
 							echo "<p></p>".$row["id"];
 							echo "<img src="images/product-details/rating.png" alt="" />";
-							echo "<span>
+							echo "<span>";
 								echo "<span><a href=".$row["Link"];">Paris</a> </span>".$row[precio1];
 									<p><a href="http://www.ripley.cl/ripley-chile/tecnologia/camaras/sup-zoom/c%C3%A1mara-s%C3%BAper-zoom-samsung-wb1100-black-2000346620526p">$159.990 Ripley</a></p>
 									<p><a href="http://www.paris.cl/tienda/es/paris/c%C3%A1mara-semiprofesional-samsung-wb1100r-384692-ppp-">$159.990 Paris</a></p>
