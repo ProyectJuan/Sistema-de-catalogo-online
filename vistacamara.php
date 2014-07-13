@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,7 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href=""><i class="fa fa-phone"></i> +56 9 500000</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> lamopcion@gmail.com</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -55,7 +56,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.jpg" alt="" /></a>
+							<a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -67,13 +68,15 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-		
+							
+					<!--			<li><a href="login.html"><i class="fa fa-lock"></i> Iniciar Sesion</a></li>-->
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!--/header-middle-->
+	
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
@@ -104,7 +107,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
-					<!--		<input type="text" placeholder="BUSCAR"/> -->
+							<!--<input type="text" placeholder="BUSCAR"/>-->
 						</div>
 					</div>
 				</div>
@@ -118,7 +121,7 @@
 				<div class="col-sm-3">
 					<div class="left-sidebar">
 						<h2>Categorias</h2>
-							<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -237,42 +240,37 @@
 						
 					</div>
 				</div>
-				<div class="col-sm-9 padding-right">
-
-
 				
-				<div class="product-details">
-					<div class="col-sm-5">
-						<div class="view-product">
-							 <?php 
-
-							echo "<img src=".$row["imagen"];" width='200' height='200'>";
-							?>
-								<h3>ZOOM</h3>"
+				<div class="col-sm-9 padding-right">
+					<div class="product-details"><!--product-details-->
+						<div class="col-sm-5">
+							<div class="view-product">
+								<img src="images/product-details/d70002.png" alt="" />
+								
 							</div>
-					<div id="similar-product" class="carousel slide" data-ride="carousel">
+							<div id="similar-product" class="carousel slide" data-ride="carousel">
 								
 								  <!-- Wrapper for slides -->
 								    <div class="carousel-inner">
 										<div class="item active">
-										  <a href=""><img src="images/product-details/samsungwb1100.jpg" width='90' height='90' alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1101.jpg" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1102.jpg" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/d70001.png" width='90' height='90' alt=""></a>
+										  <a href=""><img src="images/product-details/d70003.png" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/d70004.png" width='90' height='90'alt=""></a>
+
 										</div>
 										<div class="item">
-										  <a href=""><img src="images/product-details/samsungwb1100.jpg" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1101.jpg" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1103.jpg" width='90' height='90'alt=""></a>
+										   <a href=""><img src="images/product-details/d70002.png" width='90' height='90'alt=""></a>
+										 
 										</div>
-										<div class="item">
-										  <a href=""><img src="images/product-details/samsungwb1100.jpg" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1101.jpg" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/samsungwb1102.jpg" width='90' height='90'alt=""></a>
-										</div>
+										<!--<div class="item">
+										  <a href=""><img src="images/product-details/sonyc11.png" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/sonyc12.png" width='90' height='90'alt=""></a>
+										  <a href=""><img src="images/product-details/sonyc13.png" width='90' height='90'alt=""></a>
+										</div>-->
+										
+									</div>
 
-						</div>
-
-								
+								  <!-- Controls -->
 								  <a class="left item-control" href="#similar-product" data-slide="prev">
 									<i class="fa fa-angle-left"></i>
 								  </a>
@@ -280,39 +278,32 @@
 									<i class="fa fa-angle-right"></i>
 								  </a>
 							</div>
-					</div>
-						 <?php 
-						
-						$conexion = mysql_connect("localhost","root","");
-						mysql_select_db("catalogo", $conexion);
-						$result = mysql_query("SELECT * FROM camaras");
-						$result = mysql_query("SELECT id, tipo_camara, marca, modelo, precio1, Link, precio2, precio3, precio4, precio5, caracteristicas, tienda1, tiena2, tienda3, tienda4, tienda5, imagen FROM camaras"); 
-						if ($row = mysql_fetch_array($result)){ 
-  											
-						// "<div class="col-sm-7">";
-					//	echo "<div class="product-information">";
-								
-							echo "<h2></h2>".$row["modelo"];
-							echo "<p></p>".$row["id"];
-							
-							echo "<span>";
-								echo "<span><a href=".$row["Link"];">Paris</a> </span>".$row[precio1];
-									echo "<p><a href="">$159.990 Ripley</a></p>";
-									echo "<p><a href="">$159.990 Paris</a></p>";
-									
-									
-								echo "</span>"
-							echo "<p><b>Marca:</b></p>".$row["marca"];
-								<p><a href="http://www.samsung.com/us/photography/digital-cameras/EC-WB1100BPBUS">Link a pagina del fabricante</a></p>
-								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
-							echo "</div>"; 
-					echo "</div>";
-				echo "</div>";
-			echo "}else {";
-				echo "¡ No se ha encontrado ningún registro !"; 
-			}
 
-	?>
+						</div>
+
+						 <?php 
+								$conexion = mysql_connect("localhost","root","");
+							     mysql_select_db("catalogo", $conexion);
+							     $result = mysql_query("SELECT * FROM camaras");
+							     ?>
+						<div class="col-sm-7">
+							<div class="product-information"><!--/product-information-->
+								
+								<h2> <?php $camaras[marca];?></h2>
+								<p>Web ID: 00011</p>
+								<img src="images/product-details/rating.png" alt="" />
+								<span>
+									<span><a href="http://www.paris.cl/tienda/es/paris/camara-digital-nikon-d7000-18-105mm?gclid=CjgKEAjwiumdBRDZyvKvqb_6mkUSJABDyYOzLxazLpYmZYKPTnL_6IOAR_oC-S11Qm4ZnM7dNMrhlfD_BwE">$849.990  Paris</a> </span>
+									<p><a href="http://www.falabella.com/falabella-cl/product/3653148/Camara-Digital-W730-Pink;jsessionid=D3CA972473716351FCA743DBE4843CF9.node37?color=&passedNavAction=push">$ 899.990   Ripley</a></p>
+									<p><a href="https://www.pcfactory.cl/producto/12403-Cámara.Reflex.D7000.16.2.MP.+.AF-S.DX.18-105mm.f3.5-5.6G.ED.VR">$ 999.990   PCFactory</a></p>
+				
+								</span>
+								<p><b>Marca:</b>Nikon</p>
+								<p><a href="http://www.nikoncenter.cl/reflex_cam.php?sec=reflex&cam=4&name=d7000">Link a pagina del fabricante</a></p>
+								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+							</div><!--/product-information-->
+						</div>
+					</div><!--/product-details-->
 					
 					<div class="category-tab shop-details-tab"><!--category-tab-->
 						<div class="col-sm-12">
@@ -328,31 +319,35 @@
 							<div class="tab-pane fade" id="companyprofile" >
 								
 								<p align="justify">
-								Tipo:	 Cámara Súper Zoom</br>
-								Megapixeles:	 16</br>
-								Pantalla (Pulgadas):	 3"</br>
-								Grabación de Video:	 HD (730p)</br>
-								Color:	 Negro</br>
-								Zoom Óptico (x):	 35x</br>
-								Estabilizador de Imagen:	 Sí</br>
-								Conexión Wi-Fi:	 Sí</p></br>
+								16.2 Megapíxeles formato DX</br>
+								3.0" Pantalla LCD</br>
+								39 Áreas de Enfoque</br>
+								6 cps Disparos Continuos</br>
+								Video Full HD (1080p)</br>
+								1/8000 seg. Obturador</br>
+								Doble Ranuras para Tarjetas</br>
+								Construido en la conexión HDMI</br>
+								Control de Imagen</br>
+								D-Lighting activo</br>
 							
 							
 							</div>
 							
 							<div class="tab-pane fade active in" id="details" >
-								<p align="justify">Ya no tienes que decidir entre una cámara fotográfica de calidad profesional y una cámara que grabe sorprendentes videos HD. Con la cámara WB1100 de Samsung tú eliges. Un teleobjetivo Samsung con zoom óptico de 35x óptico te permite capturar escenas que no puedes ver a simple vista. 22.3mm lente ultra gran angular y estabilización de Imagen Dual (OIS + DIS) de 16 megapíxeles agrega nitidez y detalles impresionantes a cada cuadro, con cualquier luz o prácticamente sin luz. Además, la pantalla LCD de 3 pulgadas (75 mm) te ofrece más flexibilidad para capturar la toma que deseas.
-</p>
+								<p align="justify">Poder para asombrar. Características para inspirar.Una impresionante cámara SLR de formato DX con un cuerpo sorprendentemente cómodo de transportar, un potente sensor de imagen CMOS de 16,2 megapíxeles, EXPEED 2, alcance ISO de 100 a 6400 (ampliable), doble ranura de tarjetas SD, sistema AF de 39 puntos y D-Movie. Todo lo que necesita para mejorar sus aptitudes fotográficas.
+								</br>
+
+								<p>
 							</div>
 							
 							<div class="tab-pane fade" id="reviews" >
 								<div class="col-sm-12">
 									<ul>
-										<li><a href=""><i class="fa fa-user"></i>Carlos V.</a></li>
-										<li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
-										<li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
+										<li><a href=""><i class="fa fa-user"></i>Daniela Z.</a></li>
+										<li><a href=""><i class="fa fa-clock-o"></i>14:01 PM</a></li>
+										<li><a href=""><i class="fa fa-calendar-o"></i>07 Jul 2014</a></li>
 									</ul>
-									<p>Personalmente encuentro sus 12.3 megapíxeles más que suficientes. La cámara viene con un objetivo de 18-105mm f/3.5-5.6 ED AF-S con estabilizador VR, pantalla LCD de 3 pulgadas (de alta resolución), función Live View (para ver en directo lo que estás capturando a través de la propia pantalla LCD), detección facial, grabación de vídeo, entre otras características.</p>
+									<p>Es una buena cámara profesional, tiene muy buenas específicaciones y saca fotos geniales.</p>
 									<p><b>Escribe tu opinión</b></p>
 									
 									<form action="#">
@@ -461,7 +456,10 @@
 			</div>
 		</div>
 		
+	
 	</footer><!--/Footer-->
+	
+	
 
   
     <script src="js/jquery.js"></script>
