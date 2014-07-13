@@ -289,7 +289,7 @@
 						$result = mysql_query("SELECT id, tipo_camara, marca, modelo, precio1, Link, precio2, precio3, precio4, precio5, caracteristicas, tienda1, tiena2, tienda3, tienda4, tienda5, imagen FROM camaras"); 
 						if ($row = mysql_fetch_array($result)){ 
   											
-						echo "<div class="col-sm-7">";
+						echo "<div class="col-sm-7" >";
 						echo "<div class="product-information">";
 								
 							echo "<h2></h2>".$row["modelo"];
@@ -297,8 +297,8 @@
 							echo "<img src="images/product-details/rating.png" alt="" />";
 							echo "<span>";
 								echo "<span><a href=".$row["Link"];">Paris</a> </span>".$row[precio1];
-									<p><a href="http://www.ripley.cl/ripley-chile/tecnologia/camaras/sup-zoom/c%C3%A1mara-s%C3%BAper-zoom-samsung-wb1100-black-2000346620526p">$159.990 Ripley</a></p>
-									<p><a href="http://www.paris.cl/tienda/es/paris/c%C3%A1mara-semiprofesional-samsung-wb1100r-384692-ppp-">$159.990 Paris</a></p>
+									echo "<p>";<a href="http://www.ripley.cl/ripley-chile/tecnologia/camaras/sup-zoom/c%C3%A1mara-s%C3%BAper-zoom-samsung-wb1100-black-2000346620526p">$159.990 Ripley</a></p>
+									echo "<p>";<a href="http://www.paris.cl/tienda/es/paris/c%C3%A1mara-semiprofesional-samsung-wb1100r-384692-ppp-">$159.990 Paris</a></p>
 									
 									
 								echo "</span>"
@@ -308,9 +308,9 @@
 							echo "</div>"; 
 					echo "</div>";
 				echo "</div>";
-			}else {
+			echo "}else {";
 				echo "¡ No se ha encontrado ningún registro !"; 
-			}
+			echo"}";
 
 	?>
 					
