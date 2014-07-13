@@ -7,7 +7,7 @@ include_once("conexion.php");
 		$apellido = $_POST['nombre_com'];
 		$password = $_POST['password'];
 		$descripcion = $_POST['descripcion'];
-		$tipouser = $_POST['tipouser'];
+		
 		$email = $_POST['email'];
 
 
