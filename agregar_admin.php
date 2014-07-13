@@ -121,7 +121,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form"><!--formulario agregar producto-->
+					<div class="login-form"><!--formulario agregar administrador-->
 						<h2>Agregar Administrador</h2>
 						<form action="ingreso_admin.php" method="POST" role="form" >
 							<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control"  />
@@ -132,24 +132,12 @@
 							<input type="text" name="email" placeholder="Correo Electronico" />
 							
 							
-						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
+					
 							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
 						</form>
-					</div><!--/formulario agregar producto-->
+					</div><!--/formulario agregar administrador-->
 				</div>
-				<!--<div class="col-sm-1">
-					<h2 class="or">OR</h2>
-				</div>
-				<div class="col-sm-4"> -->
-					<!-- <div class="signup-form"> <!--sign up form-->
-					<!--	<h2>New User Signup!</h2>
-						<form action="#">
-							<input type="text" placeholder="Name"/>
-							<input type="email" placeholder="Email Address"/>
-							<input type="password" placeholder="Password"/>
-							<button type="submit" class="btn btn-default">Signup</button> -->
-						</form>
-					</div><!--/sign up form-->
+				
 				</div>
 			</div>
 		</div>
