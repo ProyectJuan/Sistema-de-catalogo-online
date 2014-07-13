@@ -310,7 +310,7 @@
 				echo "</div>";
 			echo "}else {";
 				echo "¡ No se ha encontrado ningún registro !"; 
-			echo"}";
+			}
 
 	?>
 					
