@@ -116,7 +116,6 @@
         	<form> <!-- formulario menu -->
           <h3>Ver Catálogo</h3>
           <p>Acceso total a toda la informacion del catálogo, puede realizar busqueda de las cámaras.</p>
-
           <button type="submit" value="catalogo" class="btn btn-default">Ver Catálogo</button>
 
         </div>
@@ -125,7 +124,6 @@
         	<form>
           <h3>Agregar Administradores</h3>
           <p>Para agregar un nuevo usuario al sistema, debe completar este formulario </p>
-
           <button type="submit" value="registar" class="btn btn-default">Continuar</button>
        </div>
    </form>
@@ -149,23 +147,24 @@
         	<form>
           <h3>Mensajes</h3>
           <p>Ver mensajes de usuarios, con sugerencias y preguntas.</p>
-
           <button type="submit" value="registar" class="btn btn-default">Ver Mensajes</button>
        </div>
    </form>
           <div class="col-md-4">
           	<form>
           <h3>Editar Administradores</h3>
-          <p>Puede realizar cambios en los datos de los administradores</p>
+          <p>Realice cambios en los datos de los administradores.</p>
                <button type="submit" value="registar" class="btn btn-default">Editar</button>
         </div>
-      
+
+      </div>
       </form>
 					</div><!--/sign up form-->
 				</div>
 			</div>
-		
-	
+		<section>
+			<br> </br>
+	</section>
 	
 	
 	<footer id="footer"><!--Footer-->
