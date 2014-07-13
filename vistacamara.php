@@ -294,7 +294,7 @@
 								
 							echo "<h2></h2>".$row["modelo"];
 							echo "<p></p>".$row["id"];
-							echo "<img src="images/product-details/rating.png" alt="" />";
+							echo "<img src="" />";
 							echo "<span>";
 								echo "<span><a href=".$row["Link"];">Paris</a> </span>".$row[precio1];
 									echo "<p><a href="">$159.990 Ripley</a></p>";
