@@ -112,8 +112,8 @@
 		<div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h3>Ver Inventario</h3>
-          <p>Acceso total a toda la informacion de Inventario, puede realizar busqueda de productos especificos.</p>
+          <h3>Ver Catálogo</h3>
+          <p>Acceso total a toda la informacion del catálogo, puede realizar busqueda de las cámaras.</p>
           <p><a class="btn btn-default" href="Vista1.php" role="button">Ver &raquo;</a></p>
         </div>
         <div class="col-md-4">
@@ -122,22 +122,19 @@
           <p><a class="btn btn-default" href="Registro.php" role="button">Continuar &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h3>Editar Informacion Inventario</h3>
+          <h3>Editar Informacion del Catálogo</h3>
           <p>Al momento de actualizar, agregar informacion, asegure guardar todos los cambios realizados</p>
           <p><a class="btn btn-default" href="modificar.php" role="button">Continuar &raquo;</a></p>
         </div>
       </div>
       <div class="row">
       <div class="col-md-4">
-          <h3>Agregar nuevo Producto</h3>
-          <p>Para agregar un nuevo producto al sistema de inventario debe completar el sigueinte formulario con la informacion requerida</p>
+          <h3>Agregar nuevas Cámaras</h3>
+          <p>Para agregar un nuevo producto al sistema de catálogo debe completar el sigueinte formulario con la informacion requerida</p>
           <p><a class="btn btn-default" href="Formulario.php" role="button">Continuar &raquo;</a></p>
         </div>
       <div class="col-md-4">
-          <h3>Generar Reportes</h3>
-          <p></p>
-          <p><a class="btn btn-default" href="Reportes.php" role="button">Continuar &raquo;</a></p>
-        </div>
+        
          <div class="col-md-4">
           <h3>Mensajes</h3>
           <p></p>
@@ -145,22 +142,13 @@
         </div>
       </div>
       <div>
-              <div class="col-md-4">
-          <h3>Ver Reportes</h3>
-          <p></p>
-          <p><a class="btn btn-default" href="Vreportes.php" role="button">Ver &raquo;</a></p>
-        </div>
+              
           <div class="col-md-4">
           <h3>Editar Perfir de Usuarios</h3>
           <p></p>
           <p><a class="btn btn-default" href="modificaruser.php" role="button">Ver &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-          <h3>Ver Perfiles de Usuarios</h3>
-          <p></p>
-          <p><a class="btn btn-default" href="VistaPerfil.php" role="button">Ver &raquo;</a></p>
-        </div>
-      </div>  
+             </div>  
       <div>
       </div>
       
