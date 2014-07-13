@@ -246,7 +246,7 @@
 						<div class="view-product">
 							 <?php 
 
-							echo "<img src=".$row["imagen"];" width='200' height='200'alt="">";
+							echo "<img src=".$row["imagen"];" width='200' height='200'>";
 							?>
 								<h3>ZOOM</h3>"
 							</div>
