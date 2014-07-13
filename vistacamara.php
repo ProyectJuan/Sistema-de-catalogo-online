@@ -243,7 +243,7 @@
 				
 				echo "<div class="product-details">";
 				echo	"<div class="col-sm-5">";
-						echo	"<div class="view-product">";
+						echo  "<div class="view-product">";
 							echo "<img src=".$row["imagen"];" width='200' height='200'alt="" />";
 								echo "<h3>ZOOM</h3>";
 							echo "</div>";
@@ -265,20 +265,20 @@
 										  <a href=""><img src="images/product-details/samsungwb1100.jpg" width='90' height='90'alt=""></a>
 										  <a href=""><img src="images/product-details/samsungwb1101.jpg" width='90' height='90'alt=""></a>
 										  <a href=""><img src="images/product-details/samsungwb1102.jpg" width='90' height='90'alt=""></a>
-										</div>";
+										</div>
 
-									echo "</div>";
+							echo	"</div>";
 
 								
-								echo "<a class="left item-control" href="#similar-product" data-slide="prev">
+								  <a class="left item-control" href="#similar-product" data-slide="prev">
 									<i class="fa fa-angle-left"></i>
 								  </a>
 								  <a class="right item-control" href="#similar-product" data-slide="next">
 									<i class="fa fa-angle-right"></i>
 								  </a>
-							</div>"
+						echo	"</div>";
 
-						 </div>";
+						echo "</div>";
 						
 						$conexion = mysql_connect("localhost","root","");
 						mysql_select_db("catalogo", $conexion);
