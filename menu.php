@@ -128,15 +128,7 @@
        </div>
    </form>
 
-        <div class="col-md-4">
-        	<form>
-          <h3>Editar Informacion del Catálogo</h3>
-          <p>Al momento de actualizar, agregar informacion, asegure guardar todos los cambios realizados</p>
-              <button type="submit" value="registar" class="btn btn-default" href="agregarcamara.php">Continuar</button>
-        </div>
-      </div>
-      </form>
-      <div class="row">
+           <div class="row">
 
              <div class="row">
 
