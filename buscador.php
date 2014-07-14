@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Detalle Producto| La mejor opcion!</title>
+    <title>Productos| La mejor opcion!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -30,11 +29,11 @@
 		<div class="header_top"><!--header_top-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-6 ">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i> +56 9 500000</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.com</a></li>
+								<li><a href=""><i class="fa fa-phone"></i> +56 9 5000001</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> projectjuan@domain.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,8 +41,10 @@
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
-							
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -60,7 +61,7 @@
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
-							
+								
 							</div>
 							
 						</div>
@@ -68,8 +69,8 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-							
-					<!--			<li><a href="login.html"><i class="fa fa-lock"></i> Iniciar Sesion</a></li>-->
+								
+								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -96,24 +97,30 @@
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Camaras</a></li>
 										<li><a href="product-details.html" class="active"></a></li> 
-							                        
-                                    </ul>
+								   </ul>
                                 </li> 
 							
                                 </li> 
-								<li><a href="contact-us.html">Contacto</a></li>
+								<li><a href="contact-us.html">Contacto</a></li>		 
+                      
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<!--<input type="text" placeholder="BUSCAR"/>-->
-						</div>
+						<!--<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>-->
 					</div>
 				</div>
+				</div>
 			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
+	</header>
+	
+	<section id="advertisement">
+		<!--<div class="container">
+			<img src="images/shop/advertisement.jpg" alt="" />
+		</div>-->
+	</section>
 	
 	<section>
 		<div class="container">
@@ -121,7 +128,7 @@
 				<div class="col-sm-3">
 					<div class="left-sidebar">
 						<h2>Categorias</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -224,7 +231,7 @@
 							
 						</div><!--/category-products-->
 					
-					<div class="brands_products"><!--brands_products-->
+				<div class="brands_products"><!--brands_products-->
 							<h2>Marcas</h2>
 							<div class="brands-name">
 								<ul class="nav nav-pills nav-stacked">
@@ -236,151 +243,55 @@
 								</ul>
 							</div>
 						</div><!--/brands_products-->
-					
+						
+						
 						
 					</div>
 				</div>
-				
+
+				<?php 
+include_once('conexion.php');
+if (!isset($_POST["buscar"])){ 
+      echo "Debe especificar una cadena a buscar"; 
+      echo "</html></body> \n"; 
+      exit; 
+} 
+//$conexion = mysql_connect("localhost","root","");
+//mysql_select_db("login", $conexion);
+$dbQuery=mysql_query("SELECT * FROM camaras WHERE id_camara LIKE '$_POST[buscar]' OR tipo_camara LIKE '$_POST[buscar]' OR marca LIKE '$_POST[buscar]' OR modelo LIKE '$_POST[buscar]' OR precio1 LIKE '$_POST[buscar]' OR precio2 LIKE '$_POST[buscar]' OR precio3 LIKE '$_POST[buscar]' OR precio4 LIKE '$_POST[buscar]' OR precio5 LIKE '$_POST[buscar]' OR caracteristicas LIKE '$_POST[buscar]' OR tienda1 LIKE '$_POST[buscar]' OR tienda2 LIKE '$_POST[buscar]' OR tienda3 LIKE '$_POST[buscar]' OR tienda4 LIKE '$_POST[buscar]' OR tienda5 LIKE '$_POST[buscar]' OR ruta_acceso LIKE '$_POST[buscar]' ", $conexion) or die("Error en: $: " . mysql_error());
+if ($row = mysql_fetch_array($dbQuery)){ 
+    
+   ?>
 				<div class="col-sm-9 padding-right">
-					<div class="product-details"><!--product-details-->
-						<div class="col-sm-5">
-							<div class="view-product">
-								<img src="images/product-details/d70002.png" alt="" />
-								
-							</div>
-							<div id="similar-product" class="carousel slide" data-ride="carousel">
-								
-								  <!-- Wrapper for slides -->
-								    <div class="carousel-inner">
-										<div class="item active">
-										  <a href=""><img src="images/product-details/d70001.png" width='90' height='90' alt=""></a>
-										  <a href=""><img src="images/product-details/d70003.png" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/d70004.png" width='90' height='90'alt=""></a>
+					<div class="features_items"><!--features_items-->
+						<?php   
 
-										</div>
-										<div class="item">
-										   <a href=""><img src="images/product-details/d70002.png" width='90' height='90'alt=""></a>
-										 
-										</div>
-										<!--<div class="item">
-										  <a href=""><img src="images/product-details/sonyc11.png" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/sonyc12.png" width='90' height='90'alt=""></a>
-										  <a href=""><img src="images/product-details/sonyc13.png" width='90' height='90'alt=""></a>
-										</div>-->
-										
-									</div>
+							echo "<table border = '2'> \n"; 
+							//Mostramos los nombres de las tablas 
+								echo "<tr> \n"; 
+								while ($field = mysql_fetch_field($dbQuery)){ 
+								          //  echo "<td>$field->name</td> \n"; 
+								} 
+								      echo "</tr> \n"; 
+								do { 
+								            echo "<tr> \n"; 
+								             
+								         
+								            echo "<td>".$row["marca"]."</td> \n"; 
+								            echo "<td>".$row["modelo"]."</td> \n";
+								           	echo "<a  href= ".$row["ruta_acceso"]." >"; echo "</i>Ver</a> ";
+								           
+								            echo "</tr> \n"; 
+								      } while ($row = mysql_fetch_array($dbQuery)); 
+								            echo "</table> \n"; 
+} else { 
 
-								  <!-- Controls -->
-								  <a class="left item-control" href="#similar-product" data-slide="prev">
-									<i class="fa fa-angle-left"></i>
-								  </a>
-								  <a class="right item-control" href="#similar-product" data-slide="next">
-									<i class="fa fa-angle-right"></i>
-								  </a>
-							</div>
+echo"<script type=\"text/javascript\">alert('No se ha encontrado ningun registro '); window.location='index.html';</script>";
 
-						</div>
-
-						 <?php 
-								$conexion = mysql_connect("localhost","root","");
-								if(!$conexion){
-									die("error".mysql_error());
-								}
-							     mysql_select_db("catalogo", $conexion);
-							    
-							    $id = 18;
-							    $result = mysql_query("SELECT *  FROM camaras WHERE id_camara = '".$id."'");
-							   
-							  While($row = mysql_fetch_array($result)) {
-							  	
-
-				?>			     
-					<div class='col-sm-7'>
-							<div class='product-information'><!--/product-information-->
-								
-								<?php echo "<h2>".$row['modelo']."</h2>"; ?> 		
-								
-								<?php echo "<p> Web ID:".$row['id_camara']."</p>"; } ?> 
-								<img src='images/product-details/rating.png' alt="" />
-
-								<span>
-				
-
-									<span><a href="http://www.paris.cl/tienda/es/paris/camara-digital-nikon-d7000-18-105mm?gclid=CjgKEAjwiumdBRDZyvKvqb_6mkUSJABDyYOzLxazLpYmZYKPTnL_6IOAR_oC-S11Qm4ZnM7dNMrhlfD_BwE">$849.990  Paris</a> </span>
-									<p><a href="http://www.falabella.com/falabella-cl/product/3653148/Camara-Digital-W730-Pink;jsessionid=D3CA972473716351FCA743DBE4843CF9.node37?color=&passedNavAction=push">$ 899.990   Ripley</a></p>
-									<p><a href="https://www.pcfactory.cl/producto/12403-Cámara.Reflex.D7000.16.2.MP.+.AF-S.DX.18-105mm.f3.5-5.6G.ED.VR">$ 999.990   PCFactory</a></p>
-				
-								</span>
-								<p><b>Marca:</b>Nikon</p>
-								<p><a href="http://www.nikoncenter.cl/reflex_cam.php?sec=reflex&cam=4&name=d7000">Link a pagina del fabricante</a></p>
-								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
-							</div><!--/product-information-->
-						</div>
-					</div><!--/product-details-->
-					
-					<div class="category-tab shop-details-tab"><!--category-tab-->
-						<div class="col-sm-12">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#details" data-toggle="tab">Descripción</a></li>
-								<li><a href="#companyprofile" data-toggle="tab">Detalles</a></li>
-								<li><a href="#reviews" data-toggle="tab">Comentarios</a></li>
-							</ul>
-						</div>
-						<div class="tab-content">
-							
-							
-							<div class="tab-pane fade" id="companyprofile" >
-								
-								<p align="justify">
-								16.2 Megapíxeles formato DX</br>
-								3.0" Pantalla LCD</br>
-								39 Áreas de Enfoque</br>
-								6 cps Disparos Continuos</br>
-								Video Full HD (1080p)</br>
-								1/8000 seg. Obturador</br>
-								Doble Ranuras para Tarjetas</br>
-								Construido en la conexión HDMI</br>
-								Control de Imagen</br>
-								D-Lighting activo</br>
-							
-							
-							</div>
-							
-							<div class="tab-pane fade active in" id="details" >
-								<p align="justify">Poder para asombrar. Características para inspirar.Una impresionante cámara SLR de formato DX con un cuerpo sorprendentemente cómodo de transportar, un potente sensor de imagen CMOS de 16,2 megapíxeles, EXPEED 2, alcance ISO de 100 a 6400 (ampliable), doble ranura de tarjetas SD, sistema AF de 39 puntos y D-Movie. Todo lo que necesita para mejorar sus aptitudes fotográficas.
-								</br>
-
-								<p>
-							</div>
-							
-							<div class="tab-pane fade" id="reviews" >
-								<div class="col-sm-12">
-									<ul>
-										<li><a href=""><i class="fa fa-user"></i>Daniela Z.</a></li>
-										<li><a href=""><i class="fa fa-clock-o"></i>14:01 PM</a></li>
-										<li><a href=""><i class="fa fa-calendar-o"></i>07 Jul 2014</a></li>
-									</ul>
-									<p>Es una buena cámara profesional, tiene muy buenas específicaciones y saca fotos geniales.</p>
-									<p><b>Escribe tu opinión</b></p>
-									
-									<form action="#">
-										<span>
-											<input type="text" placeholder="Your Name"/>
-											<input type="email" placeholder="Email Address"/>
-										</span>
-										<textarea name="" ></textarea>
-										<b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
-										<button type="button" class="btn btn-default pull-right">
-											Submit
-										</button>
-									</form>
-								</div>
-							</div>
-							
-						</div>
-					</div><!--/category-tab-->
-					
-				</div><!--acaarriba del div va recomended item-->
+} 
+?> 		
+					</div><!--features_items-->
+				</div>
 			</div>
 		</div>
 	</section>
@@ -454,7 +365,8 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="images/home/mapa.jpg" alt="" p>Temuco, Region de la araucania, Chile</p>
+							<img src="images/home/mapa.jpg" alt="" />
+							<p>Temuco, Region de la araucania, Chile</p>
 						</div>
 					</div>
 				</div>
@@ -469,7 +381,6 @@
 			</div>
 		</div>
 		
-	
 	</footer><!--/Footer-->
 	
 	

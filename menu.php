@@ -131,7 +131,7 @@
         	<form>
           <h3>Editar Informacion del Catálogo</h3>
           <p>Al momento de actualizar, agregar informacion, asegure guardar todos los cambios realizados</p>
-               <button type="submit" value="registar" class="btn btn-default">Continuar</button>
+               <button type="submit" value="registar" class="btn btn-default href="agregarcamara.php">Continuar</button>
         </div>
       </div>
       </form>
@@ -140,7 +140,7 @@
       	<form>
           <h3>Agregar nuevas Cámaras</h3>
           <p>Debe ingresar todos los datos requeridos.</p>
-              <button type="submit" value="registar" class="btn btn-default">Agregar</button>
+              <button type="submit" value="registar" class="btn btn-default" r>Agregar</button>
         </div>
     </form>
       <div class="col-md-4">
