@@ -145,7 +145,7 @@
       
   </table>
   <?php 
-$conexion = mysql_connect("localhost","root","123");
+$conexion = mysql_connect("localhost","root","");
 mysql_select_db("catalogo", $conexion);
 $result = mysql_query("SELECT * FROM usuarios");
 $result = mysql_query("SELECT id, usuario, nombre_com, password, descripcion, email FROM usuarios"); 
