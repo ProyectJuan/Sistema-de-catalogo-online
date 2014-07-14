@@ -265,8 +265,8 @@ $dbQuery=mysql_query("SELECT * FROM camaras WHERE id_camara LIKE '$_POST[buscar]
 if ($row = mysql_fetch_array($dbQuery)){ 
     
    ?>
-				<div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
+				<div class="col-sm-4 col-sm-offset-4">
+					<div class="login-form"><!--features_items-->
 
 	
 						<?php   
