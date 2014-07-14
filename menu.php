@@ -124,7 +124,7 @@
         	<form>
           <h3>Agregar Administradores</h3>
           <p>Para agregar un nuevo usuario al sistema, debe completar este formulario </p>
-          <button type="submit" value="registar" class="btn btn-default">Continuar</button>
+          <button type="submit" value="" class="btn btn-default">Continuar</button>
        </div>
    </form>
         <div class="col-md-4">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Editar Administradores</title>
+    <title>Eliminar Administradores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -116,97 +116,57 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	
+	<div class="login-form">
+		<div class="container">
+			<h2>Eliminar Administrador</h2>
+						<p>Ingrese la ID del perfil de usuario a eliminar.</p>
+					</div>
+				</div>
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
+				<div class="col-sm-4 col-sm-offset-4">
 					<div class="login-form"><!--formulario agregar administrador-->
-						<h2>Modificar Datos de Administrador</h2>
-						<p> Realice los cambios que se requieran.</p>
-					<?php 
+			<form method="POST" action="borrar.php" >
+          
+        	 Id Administrador <input type="text" name="id" >
+           
+           <button type="submit" value="eliminar" name="B1">Eliminar Perfil</button>
 					
-					$id=$_POST['id'];
-
-					$conexion = mysql_connect("localhost","root","123");
-					mysql_select_db("catalogo", $conexion); 
-					if (empty($_POST["id"])) {
-
-				    		echo"<script type=\"text/javascript\">alert('Ingrese una ID '); window.location='modificar_admin.php';</script>";
-					}else{
-
-				
-					
-					$sql=mysql_query("select * from usuarios where id = '$id'");
-
-					while($array=mysql_fetch_array($sql)){
-					
-					$usuario=$array['usuario']; 
-					 $apellido=$array['nombre_com']; 
-					 $password=$array['password'];
-					 $descripcion=$array['descripcion'];
-					 $email=$array['email'];
-					
-					 
-					 
-					 if(mysql_num_rows($sql)>0) { 
-				?>
-				
-					<table align="center">
-						 <form class="form-horizontal"  role="form" action="edit_admin.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
- 	 				<tr>
-					 <td>Nombre de Usuario</td>
-					 <td>
-					 <input  type='name' name='usuario' value=<?php echo $usuario ?>>
-					 </td >
-					 </tr>
-					 <tr>
-	 					<td>Nombre Completo</td>
-	 					<td>
-	 					<input type='name' name='nombre_com' value=<?php echo $nombre_com ?>>
-						 </td >
-					 </tr>
-	
-	    <tr>
-	 <td>Contraseña</td>
-	 <td>
-	 <input type='password' name='password' value=<?php echo $password ?>>
-	 </td >
-	 </tr>
-	
-	    <tr>
-	 <td>Descripcion Administrador</td>
-	 <td>
-	 <input type='name' name='descripcion' value=<?php echo $descripcion ?>>
-	 </td >
-	 </tr>
-		    <tr>
-		 </tr>
-
-	    <tr>
-	 <td>Email</td>
-	 <td>
-	 	<input type='name' name='email' value=<?php echo $email ?>>
-	 </td >
-	 </tr>
-	
-	 				<?php
-				}
-				}
-			}
-		
-				
-	?>
-
-    <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-	<input id="send" type ="submit" name ="submit" value="Modificar" />
-	 </div>
-  </div>
 	</form>
+</div>
+</div>
+  <section id="form">
+      
+
+	 <table class="col-sm-3" align="center">
+				 
+			
 	</table>
-	
-	
+ <?php 
+	$conexion = mysql_connect("localhost","root","123");
+	mysql_select_db("catalogo", $conexion);
+	$result = mysql_query("SELECT * FROM usuarios");
+	$result = mysql_query("SELECT id, usuario, nombre_com, password, descripcion, email FROM usuarios"); 
+		if ($row = mysql_fetch_array($result)){ 
+   			echo "<table border = '1'> \n"; 
+   echo "<tr><td>ID</td><td>Nombre Usuario</td><td>Nombre Completo</td><td>Contraseña</td><td>Descripcion Cargo</td><td>Email</td></tr> \n"; 
+     do { 
+      echo "<tr><td>".$row["id"]."</td><td>".$row["usuario"]."</td><td>".$row["nombre_com"]."</td><td>".$row["password"]."</td><td>".$row["descripcion"]."</td><td>".$row["email"]."</td></tr> \n"; 
+   } while ($row = mysql_fetch_array($result)); 
+   echo "</table> \n"; 
+} else { 
+echo "¡ No se ha encontrado ningún registro !"; 
+} 
+?>
+						</form>
+					</div><!--/formulario agregar administrador-->
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</section><!--/form-->
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">

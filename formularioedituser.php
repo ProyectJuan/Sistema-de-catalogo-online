@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Inicio de Sesion | Administrador</title>
+    <title>Agregar Administradores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -22,7 +23,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-    <?php include_once('conexion.php');?>
 </head><!--/head-->
 
 <body>
@@ -34,7 +34,7 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href=""><i class="fa fa-phone"></i>+56 9 5000000</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> lamopcion@gmail.cl</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.cl</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +43,8 @@
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-facebook"></i></a></li>
 								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
-								</ul>
+					
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -57,29 +58,7 @@
 						<div class="logo pull-left">
 							<a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
 						</div>
-						<!-- <div class="btn-group pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
-									<li><a href="">UK</a></li>
-								</ul>
-							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
-									<li><a href="">Pound</a></li>
-								</ul>
-							</div>
-						<!-- </div> -->
+				
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
@@ -137,34 +116,68 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	
+	<div class="login-form">
+		<div class="container">
+			<h2>Modificar Datos de Administrador</h2>
+						<p> Realice los cambios que se requieran.</p>
+					</div>
+				</div>
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4">
-					<div class="login-form"><!--login form-->
-						<h2>Iniciar Sesión</h2>
-						<form  name="login" action="validacionuser.php" method="post">
-							<input type="text" name="usuario" placeholder="Nombre de usuario" />
-							<input type="password" name="password" placeholder="Contraseña" />
-							<span>
-								<input type="checkbox" class="checkbox"> 
-								Recordar mis datos
-							</span>
-							<button type="submit" class="btn btn-default">Iniciar Sesión</button>
-						</form>
-					</div><!--/login form-->
-				</div>
+					<div class="login-form"><!--formulario agregar administrador-->
+						<?php 
+					
+					$id=$_POST['id'];
+
+					$conexion = mysql_connect("localhost","root","123");
+					mysql_select_db("catalogo", $conexion); 
+					if (empty($_POST["id"])) {
+
+				    		echo"<script type=\"text/javascript\">alert('Ingrese una ID '); window.location='modificar_admin.php';</script>";
+					}else{
+
 				
+					
+					$sql=mysql_query("select * from usuarios where id = '$id'");
+
+					while($array=mysql_fetch_array($sql)){
+					
+					$usuario=$array['usuario']; 
+					 $nombre_com=$array['nombre_com']; 
+					 $password=$array['password'];
+					 $descripcion=$array['descripcion'];
+					 $email=$array['email'];
+					
+					 
+					 
+					 if(mysql_num_rows($sql)>0) { 
+				?>
+						<h2>Modificar Administrador</h2>
+						<form action="edit_admin.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
+					Nombre de Usuario		<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control" value=<?php echo $usuario ?>>
+					Nombre Completo		<input type="text" name="nombre_com" placeholder="Nombre Completo" value=<?php echo $nombre_com ?>>
+					Contraseña		<input type="password" name="password" placeholder="Ingrese Contraseña" value=<?php echo $password ?>>
+							
+					Descripcion	<input type="text" name="descripcion" placeholder="Descripcion administrador" value=<?php echo $descripcion ?>>
+					E-Mail	<input type="text" name="email" placeholder="Correo Electronico" value=<?php echo $email ?>>
+					<?php
+				}
+				}
+			}
+	?>
+							<button id="send" type="submit"  name ="submit" value="modificar" class="btn btn-default">Modificar Administrador</button>
+						
 						</form>
+					</div><!--/formulario agregar administrador-->
+				</div>
 				
 				</div>
 			</div>
 		</div>
 	</section><!--/form-->
-	
-	
-<footer id="footer"><!--Footer-->
+	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
@@ -249,6 +262,7 @@
 		</div>
 		
 	</footer><!--/Footer-->
+	
 
   
     <script src="js/jquery.js"></script>
