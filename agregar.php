@@ -138,8 +138,7 @@
 							<input type="text" name="tienda3" placeholder="Tienda opcion 3" />
 							<input type="text" name="tienda4" placeholder="Tienda opcion 4" />
 							<input type="text" name="tienda5" placeholder="Tienda opcion 5" />
-							<label for="imagen">Imagen:</label>
-		   					 <input type="file" name="imagen" id="imagen" />
+							
 		    					
 						<!-- <button type="submit" class="btn btn-default">Agregar imagen</button>-->
 							<button type="submit" value="registar" class="btn btn-default">Agregar Producto</button>
