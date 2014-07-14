@@ -127,28 +127,27 @@
           <a href="agregar_admin.php" class="btn btn-primary"></i>Agregar Administradores</a>
        </div>
    </form>
-<<<<<<< HEAD
+
         <div class="col-md-4">
         	<form>
           <h3>Editar Informacion del Catálogo</h3>
           <p>Al momento de actualizar, agregar informacion, asegure guardar todos los cambios realizados</p>
-               <button type="submit" value="registar" class="btn btn-default href="agregarcamara.php">Continuar</button>
+              <button type="submit" value="registar" class="btn btn-default" href="agregarcamara.php">Continuar</button>
         </div>
       </div>
       </form>
       <div class="row">
-=======
+
              <div class="row">
->>>>>>> FETCH_HEAD
+
       <div class="col-md-4">
       	<form>
           <h3>Agregar nuevas Cámaras</h3>
           <p>Debe ingresar todos los datos requeridos.</p>
-<<<<<<< HEAD
-              <button type="submit" value="registar" class="btn btn-default" r>Agregar</button>
-=======
+
+            
               <a href="agregar.php" class="btn btn-primary"></i>Agregar Camaras</a>
->>>>>>> FETCH_HEAD
+
         </div>
     </form>
      
