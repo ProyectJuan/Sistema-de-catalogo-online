@@ -279,7 +279,7 @@ if ($row = mysql_fetch_array($dbQuery)){
 								         
 								            echo "<td>".$row["marca"]."</td> \n"; 
 								            echo "<td>".$row["modelo"]."</td> \n";
-								           	echo "<a  href= ".$row["ruta_acceso"]." >"; echo "</i>Ver</a> ";
+								           	echo "<td><a  href= ".$row["ruta_acceso"]." >"; echo "</i>Ver</a><td> ";
 								           
 								            echo "</tr> \n"; 
 								      } while ($row = mysql_fetch_array($dbQuery)); 
