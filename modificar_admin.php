@@ -12,8 +12,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -26,127 +26,132 @@
 </head><!--/head-->
 
 <body>
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i>+56 9 5000000</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.cl</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://twitter.com/lamejoropcion_"><i class="fa fa-twitter"></i></a></li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header_top-->
-		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
-						</div>
-				
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								
-								<li><a href="login.html" class="active"><i class="fa fa-lock"></i>Iniciar Sesión</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
-	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html">Inicio</a></li>
-								<li class="dropdown"><a href="#">Productos<i class="fa fa-angle-down"></i></a>
+  <header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
+                <li><a href=""><i class="fa fa-phone"></i>+56 9 5000000</a></li>
+                <li><a href=""><i class="fa fa-envelope"></i> lamejoropcion@gmail.cl</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/header_top-->
+    
+    <div class="header-middle"><!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/lamejor.jpg" alt="" /></a>
+            </div>
+        
+          </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                
+                <li><a href="login.html" class="active"><i class="fa fa-lock"></i>Iniciar Sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/header-middle-->
+  
+    <div class="header-bottom"><!--header-bottom-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown"><a href="#">Productos<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Camaras</a></li> <!--
-										<li><a href="product-details.html">Product Details</a></li> 
-										<li><a href="checkout.html">Checkout</a></li> 
-										<li><a href="cart.html">Cart</a></li> 
-										<li><a href="login.html" class="active">Login</a></li>  -->
+                    <li><a href="product-details.html">Product Details</a></li> 
+                    <li><a href="checkout.html">Checkout</a></li> 
+                    <li><a href="cart.html">Cart</a></li> 
+                    <li><a href="login.html" class="active">Login</a></li>  -->
                                     </ul>
                                 </li> 
-								<!-- <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                <!-- <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
                                 </li> 
-								<li><a href="404.html">404</a></li> -->
-								<li><a href="contact-us.html">Contacto</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="BUSCAR"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
-	
-	<section id="form"><!--form-->
-		<div class="container">
-			<div class="row">
-				
-					<div class="login-form"><!--formulario agregar administrador-->
-						<table align="center">
-						<h2>Modificar Administrador</h2>
-						<form action="formulario_editadmin.php" method="POST" enctype="multipart/form-data">
-							<tr>
-					<td>ID
-					</td>
-					<td>
+                <li><a href="404.html">404</a></li> -->
+                <li><a href="contact-us.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="search_box pull-right">
+              <input type="text" placeholder="BUSCAR"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/header-bottom-->
+  </header><!--/header-->
+  <div class="login-form">
+    <div class="container">
+      <h2>Modificar Administrador</h2>
+            <p>Ingrese la ID del perfil que desea modificar.</p>
+          </div>
+        </div>
+  <section id="form"><!--form-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <div class="login-form"><!--formulario agregar administrador-->
+      <form method="POST" action="formularioedituser.php" >
+          
+           Id Administrador <input type="text" name="id" >
+          <button type="submit" name="btnenviar" id="btnenviar" value="Mostrar Perfil" class="btn btn-primary">Mostrar Perfil</button>
+          
+          <a href="form_borrar.php" class="btn btn-primary"></i>Eliminar Perfil</a>
+        
+  </form>
+</div>
+</div>
+  <section id="form">
+      
 
-					   <input type="number" name="id" >
-					   	<input type="submit" name="btnenviar" id="btnenviar" value="Mostrar Perfil" >
-              <input type=button value="Eliminar Perfil" onClick= "window.location='form_borrar.php'">
-					</td>
-				</tr>		
-		
-	
-	</table>
-	
-	<?php 
+   <table class="col-sm-3" align="center">
+         
+      
+  </table>
+  <?php 
 $conexion = mysql_connect("localhost","root","123");
 mysql_select_db("catalogo", $conexion);
 $result = mysql_query("SELECT * FROM usuarios");
 $result = mysql_query("SELECT id, usuario, nombre_com, password, descripcion, email FROM usuarios"); 
 if ($row = mysql_fetch_array($result)){ 
    echo "<table border = '1'> \n"; 
-   echo "<tr><td>ID</td><td>Nombre de Usuario</td><td>Nombre Completo</td><td>Contraseña</td><td>Descripcion</td><td>Email</td></tr> \n"; 
+   echo "<tr><td>ID</td><td>Nombre Usuario</td><td>Nombre Completo</td><td>Contraseña</td><td>Cargo</td><td>Email</td></tr> \n"; 
      do { 
       echo "<tr><td>".$row["id"]."</td><td>".$row["usuario"]."</td><td>".$row["nombre_com"]."</td><td>".$row["password"]."</td><td>".$row["descripcion"]."</td><td>".$row["email"]."</td></tr> \n"; 
    } while ($row = mysql_fetch_array($result)); 
@@ -155,16 +160,8 @@ if ($row = mysql_fetch_array($result)){
 echo "¡ No se ha encontrado ningún registro !"; 
 } 
 ?>
-					</div><!--/formulario agregar administrador-->
-				</div>
-				
-				</div>
-			</div>
-		</div>
-	</section><!--/form-->
-	
-	
-	<footer id="footer"><!--Footer-->
+</section>
+  <footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
@@ -250,12 +247,13 @@ echo "¡ No se ha encontrado ningún registro !";
 		
 	</footer><!--/Footer-->
 	
+  
 
   
     <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -116,7 +116,7 @@
         	<form> <!-- formulario menu -->
           <h3>Ver Catálogo</h3>
           <p>Acceso total a toda la informacion del catálogo, puede realizar busqueda de las cámaras.</p>
-          <button type="submit" value="catalogo" class="btn btn-default">Ver Catálogo</button>
+          <a href="shop.html" class="btn btn-primary"></i>Ver Catalogo</a>
 
         </div>
     </form>
@@ -124,9 +124,10 @@
         	<form>
           <h3>Agregar Administradores</h3>
           <p>Para agregar un nuevo usuario al sistema, debe completar este formulario </p>
-          <button type="submit" value="registar" class="btn btn-default">Continuar</button>
+          <a href="agregar_admin.php" class="btn btn-primary"></i>Agregar Administradores</a>
        </div>
    </form>
+<<<<<<< HEAD
         <div class="col-md-4">
         	<form>
           <h3>Editar Informacion del Catálogo</h3>
@@ -136,25 +137,26 @@
       </div>
       </form>
       <div class="row">
+=======
+             <div class="row">
+>>>>>>> FETCH_HEAD
       <div class="col-md-4">
       	<form>
           <h3>Agregar nuevas Cámaras</h3>
           <p>Debe ingresar todos los datos requeridos.</p>
+<<<<<<< HEAD
               <button type="submit" value="registar" class="btn btn-default" r>Agregar</button>
+=======
+              <a href="agregar.php" class="btn btn-primary"></i>Agregar Camaras</a>
+>>>>>>> FETCH_HEAD
         </div>
     </form>
-      <div class="col-md-4">
-        	<form>
-          <h3>Mensajes</h3>
-          <p>Ver mensajes de usuarios, con sugerencias y preguntas.</p>
-          <button type="submit" value="registar" class="btn btn-default">Ver Mensajes</button>
-       </div>
-   </form>
+     
           <div class="col-md-4">
           	<form>
           <h3>Editar Administradores</h3>
           <p>Realice cambios en los datos de los administradores.</p>
-               <button type="submit" value="registar" class="btn btn-default">Editar</button>
+              <a href="modificar_admin.php" class="btn btn-primary"></i>Modificar Administradores</a>
         </div>
 
       </div>

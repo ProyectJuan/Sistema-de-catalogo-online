@@ -2,7 +2,12 @@
 
  
 ///Conectamos a la DB
+<<<<<<< HEAD
  $conexion = mysql_connect("localhost","root","");
+=======
+
+$conexion = mysql_connect("localhost","root","123");
+>>>>>>> FETCH_HEAD
 mysql_select_db("catalogo", $conexion);
 
 if (!$conexion)

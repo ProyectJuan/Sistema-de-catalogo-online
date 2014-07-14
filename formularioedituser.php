@@ -116,22 +116,59 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	
+	<div class="login-form">
+		<div class="container">
+			<h2>Modificar Datos de Administrador</h2>
+						<p> Realice los cambios que se requieran.</p>
+					</div>
+				</div>
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4">
 					<div class="login-form"><!--formulario agregar administrador-->
-						<h2>Agregar Administrador</h2>
-						<form action="ingreso_admin.php" method="POST" role="form" >
-							<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control"  />
-							<input type="text" name="nombre_com" placeholder="Nombre Completo" />
-							<input type="password" name="password" placeholder="Ingrese Contraseña" />
-							<input type="password" name="password1" placeholder="Ingrese nuevamente la contraseña" />
-							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
-							<input type="text" name="email" placeholder="Correo Electronico" />
+						<?php 
 					
-							<button type="submit" value="registar" class="btn btn-default">Registrar Administrador</button>
+					$id=$_POST['id'];
+
+					$conexion = mysql_connect("localhost","root","123");
+					mysql_select_db("catalogo", $conexion); 
+					if (empty($_POST["id"])) {
+
+				    		echo"<script type=\"text/javascript\">alert('Ingrese una ID '); window.location='modificar_admin.php';</script>";
+					}else{
+
+				
+					
+					$sql=mysql_query("select * from usuarios where id = '$id'");
+
+					while($array=mysql_fetch_array($sql)){
+					
+					$usuario=$array['usuario']; 
+					 $nombre_com=$array['nombre_com']; 
+					 $password=$array['password'];
+					 $descripcion=$array['descripcion'];
+					 $email=$array['email'];
+					
+					 
+					 
+					 if(mysql_num_rows($sql)>0) { 
+				?>
+						<h2>Modificar Administrador</h2>
+						<form action="edit_admin.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
+					Nombre de Usuario		<input type="text" name="usuario" placeholder="Nombre de Usuario"  class="form-control" value=<?php echo $usuario ?>>
+					Nombre Completo		<input type="text" name="nombre_com" placeholder="Nombre Completo" value=<?php echo $nombre_com ?>>
+					Contraseña		<input type="password" name="password" placeholder="Ingrese Contraseña" value=<?php echo $password ?>>
+							
+					Descripcion	<input type="text" name="descripcion" placeholder="Descripcion administrador" value=<?php echo $descripcion ?>>
+					E-Mail	<input type="text" name="email" placeholder="Correo Electronico" value=<?php echo $email ?>>
+					<?php
+				}
+				}
+			}
+	?>
+							<button id="send" type="submit"  name ="submit" value="modificar" class="btn btn-default">Modificar Administrador</button>
+						
 						</form>
 					</div><!--/formulario agregar administrador-->
 				</div>
@@ -140,8 +177,6 @@
 			</div>
 		</div>
 	</section><!--/form-->
-	
-	
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
