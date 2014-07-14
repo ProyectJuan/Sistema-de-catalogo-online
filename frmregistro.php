@@ -36,9 +36,6 @@ alert('Error');
  window.location='agregar.php';
  </script>";
 }
-}
-else {
-        echo "archivo no permitido, es tipo de archivo prohibido o excede el tamano de $limite_kb Kilobytes";
-    }
-  }
+
+  
 ?>

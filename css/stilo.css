@@ -1,12 +1,4 @@
-/* 
-Style: OrangeYouGlad.css
-Created by Randy Peterman, September 2nd, 2005
-http://design.randypeterman.com
-using TopStyle Pro 3.12
 
-Requires one image: down_arrow.gif for {mostly} 
-Standards Compliant browsers like Firefox.
-*/
 table{
 	background: #FFEFD5;
 	border-spacing: 0px;
@@ -16,7 +8,7 @@ caption{
 	width: 100%;
 	text-align: left;
 	font-weight: bolder;
-	border-top: 4px double #bbb;
+	border-top: 10px double #bbb;
 }
 table *{
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -27,9 +19,9 @@ thead{
 }
 thead * th{
 	border-bottom: 1px outset;
-	border-top: 1px outset;
-	padding-left: 3px;
-	padding-right: 3px;
+	border-top: 2px outset;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 tfoot{
 	background: #FFA109;
@@ -41,7 +33,7 @@ table * a{
 tbody * th{
 	background: #FFDCA2;
 	border-right: 1px solid #956500 !important;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
 	font-size: medium;
 	font-weight: normal;
 	padding-left: 2px;
@@ -53,9 +45,9 @@ tbody * th a{
 		color: blue !important;
 }
 tbody * td{
-	border: 0px none;
-	border-bottom: 1px solid #ddd;
-	padding-left: 3px;
+	border: 1px none;
+	border-bottom: 2px solid #ddd;
+	padding-left: 5px;
 	text-align: left;
 	vertical-align: top;
 }
@@ -73,7 +65,7 @@ tfoot tr td[colspan='4']{
 tbody td a{
 	background: url(down_arrow.gif) no-repeat;
 	background-position: top left;
-	min-height: 20px;
+	min-height: px;
 	padding-left: 20px;
 	float: left;
 	padding-right: 4px;

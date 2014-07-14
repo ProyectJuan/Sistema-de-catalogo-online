@@ -13,7 +13,7 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/stilo.css" rel="stylesheet">
+	<!--<link href="css/stilo.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -267,7 +267,7 @@ if ($row = mysql_fetch_array($dbQuery)){
    ?>
 				<div class="col-sm-4 col-sm-offset-4">
 					<div class="login-form"><!--features_items-->
-
+							<H2>Camaras relacionadas con la busqueda</H2>
 	
 						<?php   
 
@@ -282,9 +282,11 @@ if ($row = mysql_fetch_array($dbQuery)){
 								            echo "<tr> \n"; 
 								             
 								         
-								            echo "<td>".$row["marca"]."</td> \n"; 
-								            echo "<td>".$row["modelo"]."</td> \n";
-								           	echo "<td><a  href= ".$row["ruta_acceso"]." >"; echo "</i>Ver</a><td> ";
+								            echo "<td><h4>".$row["marca"]."</h4></td> \n"; 
+								            echo "<td><h4>".$row["modelo"]."<h4></td> \n";
+								            echo "<td><img src=".$row["ruta_imagen"]." >"; echo "<td> ";
+								           	echo "<a  href= ".$row["ruta_acceso"]." >"; echo "</h4></i>Ver</a> ";
+								           	
 								           
 								            echo "</tr> \n"; 
 								      } while ($row = mysql_fetch_array($dbQuery)); 
