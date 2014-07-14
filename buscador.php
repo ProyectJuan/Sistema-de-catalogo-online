@@ -13,6 +13,7 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/stilo.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -107,9 +108,11 @@
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<!--<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
-						</div>-->
+						<div class="search_box pull-right">
+							<form method="POST" action="buscador.php"> 
+							 <input type="text" placeholder="buscar" name="buscar"> 
+							 
+							</form>						</div>
 					</div>
 				</div>
 				</div>
@@ -264,9 +267,11 @@ if ($row = mysql_fetch_array($dbQuery)){
    ?>
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
+
+	
 						<?php   
 
-							echo "<table border = '2'> \n"; 
+							echo "<table border = '1'> \n"; 
 							//Mostramos los nombres de las tablas 
 								echo "<tr> \n"; 
 								while ($field = mysql_fetch_field($dbQuery)){ 
