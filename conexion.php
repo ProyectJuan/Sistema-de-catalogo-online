@@ -3,7 +3,7 @@
  
 ///Conectamos a la DB
 
- $conexion = mysql_connect("localhost","root","123");
+ $conexion = mysql_connect("localhost","root","");
 
 
 

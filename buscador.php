@@ -265,13 +265,13 @@ $dbQuery=mysql_query("SELECT * FROM camaras WHERE id_camara LIKE '$_POST[buscar]
 if ($row = mysql_fetch_array($dbQuery)){ 
     
    ?>
-				<div class="col-sm-4 col-sm-offset-4">
+				<div class="col-sm-3 col-sm-offset-3">
 					<div class="login-form"><!--features_items-->
 							<H2>Camaras relacionadas con la busqueda</H2>
 	
 						<?php   
 
-							echo "<table border = '1'> \n"; 
+							echo "<table border = '2'> \n"; 
 							//Mostramos los nombres de las tablas 
 								echo "<tr> \n"; 
 								while ($field = mysql_fetch_field($dbQuery)){ 
