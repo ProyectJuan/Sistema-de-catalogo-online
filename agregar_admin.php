@@ -131,7 +131,7 @@
 							<input type="text" name="descripcion" placeholder="Descripcion administrador" />
 							<input type="text" name="email" placeholder="Correo Electronico" />
 					
-							<button type="submit" value="registar" class="btn btn-default">Registrar Admin</button>
+							<button type="submit" value="registar" class="btn btn-default">Registrar Administrador</button>
 						</form>
 					</div><!--/formulario agregar administrador-->
 				</div>
