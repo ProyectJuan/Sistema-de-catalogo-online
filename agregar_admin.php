@@ -64,7 +64,7 @@
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
 								
-								<li><a href="login.html" class="active"><i class="fa fa-lock"></i>Iniciar Sesión</a></li>
+								<li><a href="login.php" class="active"><i class="fa fa-lock"></i>Iniciar Sesión</a></li>
 							</ul>
 						</div>
 					</div>
