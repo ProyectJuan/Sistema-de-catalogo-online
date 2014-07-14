@@ -20,7 +20,7 @@ $tienda5 = $_POST['tienda5'];
 
 
 
-$dbQuery=mysql_query("INSERT INTO camaras VALUES('','$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5','$data','$tipo')");
+$dbQuery=mysql_query("INSERT INTO camaras VALUES('$tipo_camara','$marca','$modelo','$precio1','$precio2','$precio3','$precio4','$precio5','$caracteristicas','$tienda1','$tienda2','$tienda3','$tienda4','$tienda5')");
          
 
 if ($dbQuery = true){ 
@@ -36,9 +36,5 @@ alert('Error');
  window.location='agregar.php';
  </script>";
 }
-}
-else {
-        echo "archivo no permitido, es tipo de archivo prohibido o excede el tamano de $limite_kb Kilobytes";
-    }
-  }
+
 ?>
